@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function ParalinkNetwork() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="project-detail-header">
         <h1 className="dot-ttl">
-        Paralink Network - Substrate-based Runtime
+          Paralink Network - Substrate-based Runtime
           <img
             src="/assets/green-dot.svg"
             style={{ width: "12px" }}
@@ -22,20 +26,34 @@ function ParalinkNetwork() {
         <div className="project-link-grp">
           <div className="project-link">
             <img src="/assets/icons/website.png" alt="website icon" />
-            <a className="doc-link" href="https://paralink.network/">Website</a>
+            <a className="doc-link" href="https://paralink.network/">
+              Website
+            </a>
           </div>
           <div className="project-link">
             <img src="/assets/icons/github.png" alt="github icon" />
-            <a className="doc-link" href="https://github.com/hylcore-V/paralink-substrate">Github</a>
+            <a
+              className="doc-link"
+              href="https://github.com/hylcore-V/paralink-substrate"
+            >
+              Github
+            </a>
           </div>
         </div>
         <p className="project-ttl-comment">
           ChainX is a community-driven project built on the next-generation
           blockchain framework <a className="doc-link">substrate</a>,
-          <br /> the largest <a className="doc-link" href="https://www.investopedia.com/what-are-layer-1-and-layer-2-blockchain-scaling-solutions-7104877"> Layer-2 </a> network of Bitcoin using the Light-client
-          protocol with smart contract support, spawn as the third relay chain
-          besides Polkadot/Kusama. SherpaX and MiniX will be added as a
-          parachain.
+          <br /> the largest{" "}
+          <a
+            className="doc-link"
+            href="https://www.investopedia.com/what-are-layer-1-and-layer-2-blockchain-scaling-solutions-7104877"
+          >
+            {" "}
+            Layer-2{" "}
+          </a>{" "}
+          network of Bitcoin using the Light-client protocol with smart contract
+          support, spawn as the third relay chain besides Polkadot/Kusama.
+          SherpaX and MiniX will be added as a parachain.
         </p>
         <div className="project-tag-grp tag-grp">
           <span className="blog-tag">substrate</span>
@@ -47,8 +65,7 @@ function ParalinkNetwork() {
       </div>
 
       <div className="project-detail-description">
-        <div>
-        </div>
+        <div></div>
         <div>
           <h2 className="hover-dot">
             Overview
@@ -79,7 +96,7 @@ function ParalinkNetwork() {
           </p>
 
           <h2 className="hover-dot">
-          Key Features
+            Key Features
             <img
               src="/assets/green-dot.svg"
               className="hover-dot-image"

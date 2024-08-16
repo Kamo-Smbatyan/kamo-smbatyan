@@ -75,10 +75,10 @@ p, li {
 .blog-tag {
   padding: 6px 16px;
   margin: 4px 8px;
-  border: 1px dotted var(--black);
-  background-color: var(--gray);
+  /* border: 1px dotted var(--black); */
+  background-color: #bffae2;
   border-radius: 10px;
-  color: var(--pink);
+  color: #03663d;
   cursor: pointer;
 }
 .tag-grp {
@@ -223,6 +223,7 @@ code {
   color: var(--green);
   text-decoration: underline;
 }
+
 @media (max-width:768px) {
   .mainroutes {
     padding-left:5%;

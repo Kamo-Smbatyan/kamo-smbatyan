@@ -5,7 +5,7 @@ function Whatisreactjs() {
 
 
     useEffect(()=>{
-        document.title="What is React?"
+        document.title="Portfolio | Frontend"
         document.getElementsByTagName("META")[3].content="React.js is a Javascript Library to build user interfaces. In React we can divide user interfaces into components.";
       }, [])
 

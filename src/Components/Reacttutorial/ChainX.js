@@ -1,6 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 
 function ChainX() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="project-detail-header">

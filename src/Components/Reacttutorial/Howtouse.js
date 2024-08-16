@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Tutorialinside.css";
@@ -8,14 +8,14 @@ function Howtouse() {
     document.title = "Portfolio | Substrate";
     document.getElementsByTagName("META")[3].content =
       "React is a component based Javascript library for building user interfaces.";
-    
+
     document.documentElement.scrollTop = 0;
   }, []);
 
   const navigate = useNavigate();
 
   function myfun1() {
-    navigate("/portfolio/what-is-react");
+    navigate("/portfolio/frontend");
   }
 
   function myfun2() {
@@ -23,20 +23,12 @@ function Howtouse() {
   }
 
   function toDetailPage(domain) {
-    navigate(`/portfolio/substrate/${domain}`);
+    navigate(`${domain}`);
   }
 
   return (
     <div>
-      <button className="prevbtn" onClick={myfun1}>
-        Prev
-      </button>
-
-      <button className="nextbtn" onClick={myfun2}>
-        Next
-      </button>
-
-      <div className="projects-grp">
+        <div className="projects-grp">
         <div
           className="projects-overview"
           onClick={() => toDetailPage("paralink-network")}
@@ -49,7 +41,8 @@ function Howtouse() {
           <div className="project-overview-sub">
             <h2>Paralink Network</h2>
             <p>
-              This project contains Substrate based runtime for Paralink Network.
+              This project contains Substrate based runtime for Paralink
+              Network.
             </p>
           </div>
         </div>
@@ -58,10 +51,7 @@ function Howtouse() {
           className="projects-overview"
           onClick={() => toDetailPage("chainx")}
         >
-          <video 
-            className="portfolio-fv"
-          
-          loop autoPlay muted>
+          <video className="portfolio-fv" loop autoPlay muted>
             <source src="/assets/chainx.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -73,42 +63,7 @@ function Howtouse() {
             </p>
           </div>
         </div>
-
-        <div className="projects-overview">
-          <img
-            src="/assets/paralink.png"
-            className="portfolio-fv"
-            alt="paralink"
-          />
-          <div className="project-overview-sub">
-            <h2>Paralink Network</h2>
-            <p>
-              This project contains Substrate based runtime for Paralink Network.
-            </p>
-          </div>
-        </div>
-
-        <div className="projects-overview">
-          <img
-            src="/assets/paralink.png"
-            className="portfolio-fv"
-            alt="paralink"
-          />
-          <div className="project-overview-sub">
-            <h2>Paralink Network</h2>
-            <p>
-              This project contains Substrate based runtime for Paralink Network.
-            </p>
-          </div>
-        </div>
       </div>
-
-      <button className="prevbtn" onClick={myfun1}>
-        Prev
-      </button>
-      <button className="nextbtn" onClick={myfun2}>
-        Next
-      </button>
     </div>
   );
 }
