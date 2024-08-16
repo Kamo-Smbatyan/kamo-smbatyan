@@ -1,3 +1,11 @@
-##  Substrate fulfils two main goals within the overall Web3 vision: 
-- It is the foundational technology that allowed us at Parity to build the Polkadot Relay Chain.
-- And, together with the Cumulus project, it is the de facto SDK for Polkadot, allowing parachain teams to build and deploy their chains on Polkadot.
+# 🌟 Shaping the Future, One Line of Code at a Time
+
+Hi, I'm Hylcore!
+
+I'm passionate about front-end and blockchain development. I specialize in creating dynamic user experiences with **React** and building secure, scalable solutions on **Polkadot** and **Substrate**.
+
+Blockchain is the key to the future, and I'm excited to be part of this journey.
+
+---
+
+*“Every line of code I write is a step toward a smarter, more connected future.”*
