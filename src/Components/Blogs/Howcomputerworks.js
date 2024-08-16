@@ -66,12 +66,12 @@ function Howcomputerworks() {
               </span>
             </div>
           </h2>
-          <p style={{backgroundColor: "#fff3f9", borderRadius: "28px", padding: "6px 18px"}}>
-            Substrate strives to be the best blockchain framework in which to
+          <p style={{backgroundColor: "#fff3f9", borderRadius: "28px", padding: "6px 18px", fontSize: "20px", fontStyle: "italic"}}>
+          &nbsp;&nbsp;&nbsp;"Substrate strives to be the best blockchain framework in which to
             build your custom blockchain. Substrate is not a blockchain in
             itself, but akin to a blockchain SDK framework. Substrate empowers
             you to build beyond the capabilities of others, giving you the
-            freedom to define your chain however you want.
+            freedom to define your chain however you want."
           </p>
           <h2>Introduction </h2>
           <p>
