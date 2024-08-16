@@ -19,11 +19,16 @@ function Layer2() {
             top of a blockchain to help extend its capabilities.
           </h3>
         </div>
-        <div>
+        <div className="blog-tag-grp">
           <span className="blog-tag">Layer 2</span>
           <span className="blog-tag">Off chain</span>
         </div>
-        <p>
+        <h3 className="post-date"> Posted on October 4, 2023</h3>
+    
+      </div>
+
+      <div className="blog-description">
+      <p>
           A layer 2 refers to any off-chain network, system, or technology built
           on top of a{" "}
           <a href="https://chain.link/education-hub/blockchain"> blockchain</a>{" "}
@@ -48,9 +53,6 @@ function Layer2() {
           solution to the problem of scalability, enabling fast and scalable
           execution without compromising on decentralization or security.
         </p>
-      </div>
-
-      <div className="blog-description">
         <div>
           <h2 className="hover-dot">
             The Need for Layer 2s

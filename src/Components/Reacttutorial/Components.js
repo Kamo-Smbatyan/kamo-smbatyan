@@ -5,7 +5,7 @@ import "./Tutorialinside.css";
 
 function Howtouse() {
   useEffect(() => {
-    document.title = "Portfolio | Substrate";
+    document.title = "Portfolio | Polkadot";
     document.getElementsByTagName("META")[3].content =
       "React is a component based Javascript library for building user interfaces.";
 
@@ -31,7 +31,7 @@ function Howtouse() {
       <div className="projects-grp">
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("acria-scan-explorer")}
+          onClick={() => toDetailPage("/portfolio/acria-scan-explorer")}
         >
           <img
             src="/assets/acria.png"
@@ -48,7 +48,7 @@ function Howtouse() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("wagerr-smart-contract")}
+          onClick={() => toDetailPage("/portfolio/wagerr-smart-contract")}
         >
           <img
             src="/assets/wagerr.png"

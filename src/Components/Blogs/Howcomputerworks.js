@@ -16,10 +16,11 @@ function Howcomputerworks() {
           <h1>Substrate & Polkadot </h1>
           <h3>Revolutionizing Blockchain Development</h3>
         </div>
-        <div>
+        <div className="blog-tag-grp">
           <span className="blog-tag">Substrate</span>
           <span className="blog-tag">Polkadot</span>
         </div>
+        <h3 className="post-date"> Posted on August 17, 2023</h3>
       </div>
       <div className="blog-main-img">
         <div></div>

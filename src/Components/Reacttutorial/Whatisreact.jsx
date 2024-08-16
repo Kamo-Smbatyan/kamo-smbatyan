@@ -27,7 +27,7 @@ function Whatisreact() {
       <div className="projects-grp">
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("/portfolio/frontend/subsocial")}
+          onClick={() => toDetailPage("/portfolio/subsocial")}
         >
           <video className="portfolio-fv" loop autoPlay muted>
             <source src="/assets/subsocial.mp4" type="video/mp4" />
@@ -43,7 +43,7 @@ function Whatisreact() {
         <div
           className="projects-overview"
           onClick={() =>
-            toDetailPage("/portfolio/frontend/health-care-hospital")
+            toDetailPage("/portfolio/health-care-hospital")
           }
         >
           <img
@@ -61,7 +61,7 @@ function Whatisreact() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("/portfolio/frontend/zenlink")}
+          onClick={() => toDetailPage("/portfolio/zenlink")}
         >
           <img
             src="/assets/zenlink-overview.png"

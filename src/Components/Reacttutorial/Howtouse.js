@@ -31,7 +31,7 @@ function Howtouse() {
         <div className="projects-grp">
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("paralink-network")}
+          onClick={() => toDetailPage("/portfolio/paralink-network")}
         >
           <img
             src="/assets/paralink.png"
@@ -49,7 +49,7 @@ function Howtouse() {
 
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("chainx")}
+          onClick={() => toDetailPage("/portfolio/chainx")}
         >
           <video className="portfolio-fv" loop autoPlay muted>
             <source src="/assets/chainx.mp4" type="video/mp4" />

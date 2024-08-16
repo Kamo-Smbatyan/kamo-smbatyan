@@ -23,7 +23,7 @@ function Reacttutorialindex() {
       <div className="projects-grp">
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("/portfolio/frontend/subsocial")}
+          onClick={() => toDetailPage("/portfolio/subsocial")}
         >
           <video className="portfolio-fv" loop autoPlay muted>
             <source src="/assets/subsocial.mp4" type="video/mp4" />
@@ -39,7 +39,7 @@ function Reacttutorialindex() {
         <div
           className="projects-overview"
           onClick={() =>
-            toDetailPage("/portfolio/frontend/health-care-hospital")
+            toDetailPage("/portfolio/health-care-hospital")
           }
         >
           <img
@@ -57,7 +57,7 @@ function Reacttutorialindex() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("/portfolio/frontend/zenlink")}
+          onClick={() => toDetailPage("/portfolio/zenlink")}
         >
           <img
             src="/assets/zenlink-overview.png"
@@ -71,7 +71,7 @@ function Reacttutorialindex() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("polkadot/acria-scan-explorer")}
+          onClick={() => toDetailPage("acria-scan-explorer")}
         >
           <img
             src="/assets/acria.png"
@@ -88,7 +88,7 @@ function Reacttutorialindex() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("polkadot/wagerr-smart-contract")}
+          onClick={() => toDetailPage("wagerr-smart-contract")}
         >
           <img
             src="/assets/wagerr.png"
@@ -105,7 +105,7 @@ function Reacttutorialindex() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("substrate/paralink-network")}
+          onClick={() => toDetailPage("paralink-network")}
         >
           <img
             src="/assets/paralink.png"
@@ -122,7 +122,7 @@ function Reacttutorialindex() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("substrate/chainx")}
+          onClick={() => toDetailPage("chainx")}
         >
           <video className="portfolio-fv" loop autoPlay muted>
             <source src="/assets/chainx.mp4" type="video/mp4" />

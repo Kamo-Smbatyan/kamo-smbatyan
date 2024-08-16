@@ -18,7 +18,8 @@ li {
   color: var(--black);
   line-height: 40px;
 }
-p, li {
+p,
+li {
   font-size: 18px;
   line-height: 40px;
 }
@@ -38,15 +39,12 @@ p, li {
   opacity: 1; /* Initially invisible */
   transition: opacity 0.3s ease, right 0.3s ease;
   z-index: 1;
-
 }
 
 .hover-dot:hover .hover-dot-image {
   opacity: 1;
   right: -20px; /* Final position */
 }
-
-
 
 /* scrollbar customize */
 /* Target the scrollbar */
@@ -75,11 +73,51 @@ p, li {
 .blog-tag {
   padding: 6px 16px;
   margin: 4px 8px;
-  /* border: 1px dotted var(--black); */
-  background-color: #bffae2;
+  /* border: 1px dotted var(--gray); */
+  background-color: var(--gray);
+  color: var(--black);
   border-radius: 10px;
-  color: #03663d;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); */
+  border: 1px dotted #c3c3c3;
+}
+.blog-tag:hover {
+  color: var(--black);
+  background-color: white;
+  /* border: 1px dotted #ef6ab1; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+.portfolio-tag {
+  width: fit-content;
+  text-decoration: none;
+  padding: 6px 16px;
+  margin: 4px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  color: var(--black);
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.portfolio-tag span {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+  padding: 1px 7px;
+  font-weight: 700;
+  top: -9px;
+  right: -11px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.portfolio-tag:hover {
+  color: var(--black);
+  background-color: white;
+  /* border: 1px dotted #ef6ab1; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 .tag-grp {
   display: flex;
@@ -109,9 +147,15 @@ p, li {
 }
 
 @keyframes gradientChange {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .gradient-text {
@@ -178,6 +222,15 @@ p, li {
   padding-right: 20%;
   padding-top: 30px;
 }
+.post-date {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  color: #7b7b7b;
+}
+.blog-tag-grp {
+  margin-top: 70px;
+}
 
 .bloglink1 {
   margin-left: 3%;
@@ -212,7 +265,7 @@ code {
   background-color: var(--gray);
   padding: 6px 12px;
 }
- .doc-link {
+.doc-link {
   font-style: italic;
   text-decoration: underline;
   color: var(--pink);
@@ -223,10 +276,47 @@ code {
   color: var(--green);
   text-decoration: underline;
 }
+/* style of portfolio */
+.portfolio-sidebar {
+  margin-left: 2vw;
+  margin-top: 20px;
+  border: none;
+  flex-direction: column;
+  width: 15%;
+  /* justify-content: start; */
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  gap: 16px;
+}
 
-@media (max-width:768px) {
+/* about page */
+.about-main {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-main h1, .about-main p {
+  width: 40vw;
+}
+.about-main h1 {
+  text-align: center;
+}
+.about-main p {
+  font-size: 20px;
+}
+
+.about-logo {
+  width: 40px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
   .mainroutes {
-    padding-left:5%;
-    padding-right:5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }

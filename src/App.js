@@ -38,6 +38,7 @@ function App() {
         >
           Home
         </NavLink>
+
         <NavLink
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
@@ -58,18 +59,18 @@ function App() {
         >
           Portfolio
         </NavLink>
+
         <NavLink
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
           className="bloglink1"
-          to="/write-with-me"
+          to="/about"
         >
-          Write with me
+          About
         </NavLink>
-
-        <NavLink
+        {/* <NavLink
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
@@ -78,7 +79,7 @@ function App() {
           to="/reportproblem"
         >
           Report a problem
-        </NavLink>
+        </NavLink> */}
       </div>
 
       <div className="mainroutes">
@@ -103,7 +104,7 @@ function App() {
               </React.Suspense>
             }
           ></Route>
-          <Route path="/write-with-me" element={<Writewithus />}></Route>
+          <Route path="/about" element={<Writewithus />}></Route>
 
           <Route path="/reportproblem" element={<Reportproblem />}></Route>
         </Routes>

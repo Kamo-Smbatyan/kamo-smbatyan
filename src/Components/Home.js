@@ -3,6 +3,9 @@ import "./Components.css";
 
 function Home() {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     document.title = "Hylcore | Home";
     document.getElementsByTagName("META")[3].content =
       "I am a React developer who can develop complex user interfaces for the web. You can contact me at +92 310 4864308";
