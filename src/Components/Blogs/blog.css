@@ -1,0 +1,47 @@
+/* style for substrate and polkadot */
+.ttl-logo {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+.ttl-logo img {
+  width: 80px;
+  height: auto;
+}
+.seo-img-pan {
+  width: 28vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seo-img {
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in-out;
+}
+.seo-img:hover {
+  transform: scale(1.45);
+}
+.blog-main a {
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--pink);
+  font-size: 20px;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+.blog-main
+a:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+.note {
+  background: var(--gray);
+  padding: 6px 18px;
+  border-radius: 20px;
+}
+.blog-main h2 {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
