@@ -3,7 +3,7 @@ import "./blog.css";
 
 function Layer2() {
   useEffect(() => {
-    document.title = "Blog | Substrate & Polkadot";
+    document.title = "Blog | What is Layer2?";
     document.getElementsByTagName("META")[3].content =
       "In this article, you will see my insights about the Substrate & Polkadot";
     document.documentElement.scrollTop = 0;
