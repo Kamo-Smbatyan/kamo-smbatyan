@@ -1,3 +1,5 @@
+import React from "react";
+
 function Blogindex() {
   return (
     <div className="blog-main">
