@@ -81,7 +81,7 @@ function Layer2() {
             three conditions, but not all three simultaneously.
           </p>
           <img
-            src="/assets/blockchain-trilemma.png"
+            src="/assets/blockchain-trilemma.webp"
             alt="blockchain trillemma"
           />
           <p>
@@ -205,7 +205,7 @@ function Layer2() {
             at zero cost and sub-second speeds directly peer to peer—a classic
             example of scalability.
           </p>
-          <img src="/assets/paymentchannel.png" alt="payment channel" />
+          <img src="/assets/paymentchannel.webp" alt="payment channel" />
           <h2 className="hover-dot">
             Rollups
             <img
@@ -280,7 +280,7 @@ function Layer2() {
             chain stores data regarding multiple rollup transactions.
           </p>
           <img
-            src="/assets/rolluptransaction.png"
+            src="/assets/rolluptransaction.webp"
             alt="rollup transaction, transaction on base blockchains"
           />
           <p>
@@ -408,7 +408,7 @@ function Layer2() {
             contract during the dispute period for the validator’s actions to be
             nullified before transactions are finalized.
           </p>
-          <img src="/assets/optimistic rollups.png" alt="optimistic rollups" />
+          <img src="/assets/optimistic rollups.webp" alt="optimistic rollups" />
           <h3>zk-rollup Validity Proofs</h3>
           <p>
             Validity proofs can be viewed as having the opposite philosophical
@@ -427,7 +427,7 @@ function Layer2() {
             base chain, as every batch must have a corresponding validity proof.{" "}
           </p>
 
-          <img src="/assets/zk rollup.png" alt="zk rollup" />
+          <img src="/assets/zk rollup.webp" alt="zk rollup" />
           <h2 className="hover-dot">
             Scaling Blockchains
             <img
