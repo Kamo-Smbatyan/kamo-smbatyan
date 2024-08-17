@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./blog.css";
 
-function Howcomputerworks() {
+function SubstrateAndPolkadot() {
   useEffect(() => {
     document.title = "Blog | Substrate & Polkadot";
     document.getElementsByTagName("META")[3].content =
@@ -224,4 +224,4 @@ function Howcomputerworks() {
   );
 }
 
-export default Howcomputerworks;
+export default SubstrateAndPolkadot;

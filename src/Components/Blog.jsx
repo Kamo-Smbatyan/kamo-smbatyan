@@ -4,8 +4,8 @@ import "./Components.css";
 import {  Rings } from "react-loader-spinner";
 const Blogindex = React.lazy(() => import("./Blogs/Blogindex"));
 const Reactseo = React.lazy(() => import("./Blogs/Reactseo"));
-const Howcomputerwroks = React.lazy(() => import("./Blogs/SubstrateAndPolkadot"));
-const Layer2 = React.lazy(() => import("./Blogs/Layer2"))
+const SubstrateAndPolkadot = React.lazy(() => import("./Blogs/SubstrateAndPolkadot"));
+const LayerTwo = React.lazy(() => import("./Blogs/LayerTwo"));
 
 function Blog() {
   const [state, setstate] = useState("block");
@@ -84,7 +84,7 @@ function Blog() {
             borderRight: isActive ? "4px solid #24cc85" : "#24cc85",
           })}
           className="bloglink real-bloglink"
-          to="layer2"
+          to="layer-two"
         >
           Layer2
         </NavLink>
@@ -116,12 +116,12 @@ function Blog() {
                   </div>
                 }
               >
-                <Howcomputerwroks />
+                <SubstrateAndPolkadot />
               </React.Suspense>
             }
           ></Route>
           <Route
-            path="layer2"
+            path="layer-two"
             element={
               <React.Suspense
                 fallback={
@@ -130,7 +130,7 @@ function Blog() {
                   </div>
                 }
               >
-                <Layer2 />
+                <LayerTwo />
               </React.Suspense>
             }
           ></Route>
