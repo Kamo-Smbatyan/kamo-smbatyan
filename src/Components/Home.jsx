@@ -140,24 +140,6 @@ function Home() {
             creations.
           </p>
         </div>
-
-        {/* <p>
-          You can check my Github account @{" "}
-          <a href="https://github.com/khuramhaf">Github</a>
-        </p>
-        <p>
-          Here is the link to my youtube channel{" "}
-          <a href="https://www.youtube.com/channel/UCq11-ZWOpdxefM637LElxDg">
-            YouTube
-          </a>
-        </p>
-
-        <p style={{ fontSize: 20 }}>
-          Contact me <br />
-          Email: contact@musk-technology.com
-          <br />
-          Mob & whatsapp: +92 310 4864308
-        </p> */}
       </div>
     </div>
   );

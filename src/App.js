@@ -5,7 +5,7 @@ import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 import About from "./Components/About";
 import { Rings } from "react-loader-spinner";
-const Reacttutorial = React.lazy(() => import("./Components/Portfolio"));
+const Portfolio = React.lazy(() => import("./Components/Portfolio"));
 
 function App() {
   return (
@@ -83,7 +83,7 @@ function App() {
                   </div>
                 }
               >
-                <Reacttutorial />
+                <Portfolio />
               </React.Suspense>
             }
           ></Route>
