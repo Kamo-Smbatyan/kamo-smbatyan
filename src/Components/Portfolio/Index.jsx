@@ -11,7 +11,6 @@ function Reacttutorialindex() {
 
   const navigate = useNavigate();
 
-
   function toDetailPage(domain) {
     navigate(`${domain}`);
   }
@@ -35,9 +34,7 @@ function Reacttutorialindex() {
         </div>
         <div
           className="projects-overview"
-          onClick={() =>
-            toDetailPage("/portfolio/health-care-hospital")
-          }
+          onClick={() => toDetailPage("/portfolio/health-care-hospital")}
         >
           <img
             src="/assets/healthcare.webp"
@@ -133,8 +130,52 @@ function Reacttutorialindex() {
             </p>
           </div>
         </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/drips-network-contract")}
+        >
+          <video className="portfolio-fv" loop autoPlay muted>
+            <source src="/assets/drips.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="project-overview-sub">
+            <h2>Drips Network Contract</h2>
+            <p>💧 Drips Protocol Smart Contracts</p>
+          </div>
+        </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/gemforge-command-line-tool")}
+        >
+          <img
+            src="/assets/gemforge.webp"
+            className="portfolio-fv"
+            alt="Gemforge command line tool"
+          />
+          <div className="project-overview-sub">
+            <h2>Gemforge Command Line Tool</h2>
+            <p>
+              Command-line tool for building, deploying and upgrading Diamond
+              Standard contracts on EVM chains.
+            </p>
+          </div>
+        </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/erc-20-contract")}
+        >
+          <img
+            src="/assets/erc20contract.webp"
+            className="portfolio-fv"
+            alt="ERC-20 Contract"
+          />
+          <div className="project-overview-sub">
+            <h2>ERC-20 Contract</h2>
+            <p>High level implementation of the ERC-20 tokens contract</p>
+          </div>
+        </div>
       </div>
-   
+
       <div></div>
     </div>
   );

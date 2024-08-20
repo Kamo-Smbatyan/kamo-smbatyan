@@ -20,6 +20,11 @@ import Healthcare from "./Portfolio/Projects/Healthcare";
 import Zenlink from "./Portfolio/Projects/Zenlink";
 import Acria from "./Portfolio/Projects/Acria";
 import Wagerr from "./Portfolio/Projects/wagerr";
+import DripsContract from "./Portfolio/Projects/DripsContract";
+import GemforgeTool from "./Portfolio/Projects/GemforgeTool";
+import ErcContract from "./Portfolio/Projects/ErcContract";
+
+// import css file
 import "./Components.css";
 
 function Portfolio() {
@@ -71,7 +76,7 @@ function Portfolio() {
         </NavLink>
         <NavLink onClick={myfun1} className="portfolio-tag" to="blockchain">
           Blockchain
-          <span>1</span>
+          <span>4</span>
         </NavLink>
         <NavLink onClick={myfun1} className="portfolio-tag" to="substrate">
           Substrate
@@ -114,6 +119,9 @@ function Portfolio() {
           <Route path="acria-scan-explorer" element={<Acria />}></Route>
           <Route path="subsocial" element={<Subsocial />}></Route>
           <Route path="wagerr-smart-contract" element={<Wagerr />}></Route>
+          <Route path="drips-network-contract" element={<DripsContract />}></Route>
+          <Route path="gemforge-command-line-tool" element={<GemforgeTool />}></Route>
+          <Route path="erc-20-contract" element={<ErcContract />}></Route>
         </Routes>
       </div>
     </div>
