@@ -81,6 +81,22 @@ function Blockchain() {
             </p>
           </div>
         </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/layer-swap")}
+        >
+          <img
+            src="/assets/layer swap.webp"
+            className="portfolio-fv"
+            alt="layer swap atomice bridge"
+          />
+          <div className="project-overview-sub">
+            <h2>Layer Swap Atomic Bridge</h2>
+            <p>
+            Layerswap V8 Atomic Bridging Protocol
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

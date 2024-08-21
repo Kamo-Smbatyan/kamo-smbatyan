@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PortfolioStyle.css";
 
-function Reacttutorialindex() {
+function Index() {
   useEffect(() => {
     document.title = "Hylcore | Portfolio";
     document.getElementsByTagName("META")[3].content = "This is my Protfolio";
@@ -174,6 +174,37 @@ function Reacttutorialindex() {
             <p>High level implementation of the ERC-20 tokens contract</p>
           </div>
         </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/elise-ecommerce")}
+        >
+          <img
+            src="/assets/elise2.webp"
+            className="portfolio-fv"
+            alt="Elise ecommerce"
+          />
+          <div className="project-overview-sub">
+            <h2>Elise Ecommerce</h2>
+            <p>
+              About Elise is an e-commerce website built with Next.js and Chakra
+              UI.
+            </p>
+          </div>
+        </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/layer-swap")}
+        >
+          <img
+            src="/assets/layer swap.webp"
+            className="portfolio-fv"
+            alt="layer swap atomice bridge"
+          />
+          <div className="project-overview-sub">
+            <h2>Layer Swap Atomic Bridge</h2>
+            <p>Layerswap V8 Atomic Bridging Protocol</p>
+          </div>
+        </div>
       </div>
 
       <div></div>
@@ -181,4 +212,4 @@ function Reacttutorialindex() {
   );
 }
 
-export default Reacttutorialindex;
+export default Index;

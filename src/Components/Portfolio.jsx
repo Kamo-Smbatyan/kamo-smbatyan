@@ -23,12 +23,16 @@ import Wagerr from "./Portfolio/Projects/wagerr";
 import DripsContract from "./Portfolio/Projects/DripsContract";
 import GemforgeTool from "./Portfolio/Projects/GemforgeTool";
 import ErcContract from "./Portfolio/Projects/ErcContract";
+import EliseEcommerce from "./Portfolio/Projects/EliseEcommerce";
+import LayerSwap from "./Portfolio/Projects/LayerSwap";
 
 // import css file
 import "./Components.css";
 
 function Portfolio() {
   const [state, setstate] = useState("flex");
+  // State to manage the active link
+  const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
     document.title = "Hylcore | Portfolio";
@@ -56,11 +60,12 @@ function Portfolio() {
     }
   }
 
-  function myfun1() {
+  const handleNavLinkClick = (to) => {
     if (window.innerWidth <= 600) {
       setstate("none");
     }
-  }
+    setActiveLink(to);
+  };
 
   return (
     <div>
@@ -70,33 +75,61 @@ function Portfolio() {
         </button>
       </div>
       <div style={{ display: state }} className="portfolio-sidebar">
-        <NavLink onClick={myfun1} className="portfolio-tag" to="frontend">
-          Frontend
-          <span>3</span>
-        </NavLink>
-        <NavLink onClick={myfun1} className="portfolio-tag" to="blockchain">
-          Blockchain
-          <span>4</span>
-        </NavLink>
-        <NavLink onClick={myfun1} className="portfolio-tag" to="substrate">
-          Substrate
-          <span>2</span>
-        </NavLink>
+      <NavLink
+        onClick={() => handleNavLinkClick('frontend')}
+        className={activeLink === 'frontend' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="frontend"
+      >
+        Frontend
+        <span>3</span>
+      </NavLink>
 
-        <NavLink onClick={myfun1} className="portfolio-tag" to="polkadot">
-          Polkadot
-          <span>2</span>
-        </NavLink>
+      <NavLink
+        onClick={() => handleNavLinkClick('blockchain')}
+        className={activeLink === 'blockchain' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="blockchain"
+      >
+        Blockchain
+        <span>4</span>
+      </NavLink>
 
-        <NavLink onClick={myfun1} className="portfolio-tag" to="react">
-          React.JS
-          <span>2</span>
-        </NavLink>
+      <NavLink
+        onClick={() => handleNavLinkClick('substrate')}
+        className={activeLink === 'substrate' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="substrate"
+      >
+        Substrate
+        <span>2</span>
+      </NavLink>
 
-        <NavLink onClick={myfun1} className="portfolio-tag" to="block-explorer">
-          Block Explorer
-          <span>1</span>
-        </NavLink>
+    
+      <NavLink
+        onClick={() => handleNavLinkClick('polkadot')}
+        className={activeLink === 'polkadot' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="polkadot"
+      >
+        Polkadot
+        <span>2</span>
+      </NavLink>
+
+   
+      <NavLink
+        onClick={() => handleNavLinkClick('react')}
+        className={activeLink === 'react' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="react"
+      >
+        React.JS
+        <span>3</span>
+      </NavLink>
+
+      <NavLink
+        onClick={() => handleNavLinkClick('block-explorer')}
+        className={activeLink === 'block-explorer' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="block-explorer"
+      >
+        Block Explorer
+        <span>1</span>
+      </NavLink>
       </div>
       <div className="rtroutes">
         <Routes>
@@ -122,6 +155,8 @@ function Portfolio() {
           <Route path="drips-network-contract" element={<DripsContract />}></Route>
           <Route path="gemforge-command-line-tool" element={<GemforgeTool />}></Route>
           <Route path="erc-20-contract" element={<ErcContract />}></Route>
+          <Route path="elise-ecommerce" element={<EliseEcommerce />}></Route>
+          <Route path="layer-swap" element={<LayerSwap />}></Route>
         </Routes>
       </div>
     </div>
