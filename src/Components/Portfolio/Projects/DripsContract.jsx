@@ -1,15 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
 
-function DripsContract() {
+function DripsProtocol() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <div className="project-detail-header">
         <h1 className="dot-ttl">
-          Drips Network Contract
+          Drips Protocol V2 Smart Contracts
           <img
             src="/assets/green-dot.svg"
             style={{ width: "12px" }}
@@ -17,14 +18,15 @@ function DripsContract() {
           />
         </h1>
 
-        <video className="project-detail-fv" loop autoPlay muted>
-          <source src="/assets/drips.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <img
+          src="/assets/drips.webp"
+          alt="Drips Protocol"
+          className="project-detail-fv"
+        />
         <div className="project-link-grp">
           <div className="project-link">
             <img src="/assets/icons/website.webp" alt="website" />
-            <a className="doc-link" href="https://acria.network/">
+            <a className="doc-link" href="https://www.drips.network/">
               Website
             </a>
           </div>
@@ -32,74 +34,79 @@ function DripsContract() {
             <img src="/assets/icons/github.webp" alt="github" />
             <a
               className="doc-link"
-              href="https://github.com/hylcore-V/polkadot-substrate-block-explorer"
+              href="https://github.com/hylcore-V/drips-network-contract"
             >
               Github
             </a>
           </div>
         </div>
         <p className="project-ttl-comment">
-          Real-time multi-chain Explorer for Polkadot, Kusama, Rococo networks.
+          Drips is an EVM blockchain protocol for streaming and splitting ERC-20
+          tokens. It enables seamless and efficient token distribution across
+          various applications, making it an ideal solution for decentralized
+          financial systems and beyond.
         </p>
         <div className="project-tag-grp tag-grp">
+          <span className="blog-tag">EVM</span>
+          <span className="blog-tag">Smart Contract</span>
           <span className="blog-tag">Blockchain</span>
-          <span className="blog-tag">Polkadot</span>
-          <span className="blog-tag">Typescript</span>
+          <span className="blog-tag">Funding</span>
         </div>
       </div>
 
       <div className="project-detail-description">
+        <div></div>
         <div>
           <h2 className="hover-dot">
-            Project Overview
+            Overview
             <img
               src="/assets/green-dot.svg"
               className="hover-dot-image"
               alt="green dot"
             />
           </h2>
-          <div className="subsocial-img-grp">
-            <img src="/assets/polkadot.webp" alt="polkadot" />
-            <img src="/assets/icons/kusama.svg" alt="kusama" />
-          </div>
           <p>
-            AcriaScan Explorer is a cutting-edge real-time multi-chain explorer
-            designed specifically for the{" "}
-            <a className="doc-link" href="https://docs.substrate.io/">
-              {" "}
-              Polkadot
-            </a>
-            ,{" "}
-            <a className="doc-link" href="https://guide.kusama.network/">
-              {" "}
-              Kusama
-            </a>
-            , and{" "}
-            <a
-              className="doc-link"
-              href="https://docs.rs/crate/rococo-runtime/latest"
-            >
-              {" "}
-              Rococo
-            </a>{" "}
-            networks. Unlike traditional blockchain explorers, AcriaScan is the
-            first of its kind to fully support Polkadot networks, providing
-            users with a robust platform to monitor and analyze blockchain data
-            across multiple networks.
+            Drips Protocol V2 is designed to enhance the streaming and splitting
+            of ERC-20 tokens on the Ethereum blockchain. It uses Foundry for
+            development, testing, and deployment, offering a streamlined process
+            for building secure and efficient smart contracts. This protocol is
+            ideal for projects requiring ongoing token distribution, such as
+            subscription services, payroll systems, or decentralized autonomous
+            organizations (DAOs).
           </p>
-          <p>
-            This project leverages a Python backend to fetch and process
-            real-time blockchain data, ensuring that users have access to the
-            most up-to-date information. The frontend is built using AngularJS,
-            making AcriaScan a highly responsive and interactive platform.
-            Additionally, Docker is utilized to streamline the deployment
-            process, allowing for easy setup and scalability.
-          </p>
-        </div>
 
-        <div>
           <h2 className="hover-dot">
-            Key Features and Technologies
+            Key Features
+            <img
+              src="/assets/green-dot.svg"
+              className="hover-dot-image"
+              alt="green dot"
+            />
+          </h2>
+          <ul>
+            <li>
+              <strong>Streaming and Splitting:</strong> Efficiently manage the
+              distribution of ERC-20 tokens over time, allowing for continuous
+              and automated transfers.
+            </li>
+            <li>
+              <strong>Secure Development:</strong> Utilizes Foundry and Slither
+              for secure contract development and static analysis.
+            </li>
+            <li>
+              <strong>Modular Deployment:</strong> The protocol supports modular
+              deployment, enabling easy upgrades and integration with other
+              systems.
+            </li>
+            <li>
+              <strong>Cross-Network Compatibility:</strong> Deployable on
+              various Ethereum-compatible networks, with support for multiple
+              verification and publishing options.
+            </li>
+          </ul>
+
+          <h2 className="hover-dot">
+            Development Workflow
             <img
               src="/assets/green-dot.svg"
               className="hover-dot-image"
@@ -107,38 +114,36 @@ function DripsContract() {
             />
           </h2>
           <p>
-            AcriaScan Explorer is built using a combination of powerful
-            technologies that ensure its efficiency and reliability:
+            The development of Drips Protocol V2 is managed using Foundry, a
+            comprehensive framework for Ethereum smart contract development.
+            Here are some of the key steps in the workflow:
           </p>
           <ul>
             <li>
-              <strong>Python Backend:</strong> Handles real-time data
-              processing, fetching blockchain data from Polkadot, Kusama, and
-              Rococo networks.
+              <strong>Formatting Code:</strong> Ensure consistent formatting
+              across the codebase using:
+              <pre>
+                <code>forge fmt</code>
+              </pre>
             </li>
             <li>
-              <strong>AngularJS Frontend:</strong> Provides a dynamic and
-              responsive user interface, allowing users to interact with
-              blockchain data seamlessly.
+              <strong>Running Tests:</strong> Validate contract functionality by
+              running tests with:
+              <pre>
+                <code>forge test</code>
+              </pre>
             </li>
             <li>
-              <strong>Docker:</strong> Simplifies the deployment process,
-              enabling the application to run consistently across different
-              environments.
+              <strong>Static Analysis:</strong> Detect potential security issues
+              using Slither:
+              <pre>
+                <code>slither .</code>
+              </pre>
             </li>
           </ul>
-          <p>
-            The explorer supports a wide range of functionalities, including
-            searching for blocks and transactions, and retrieving detailed
-            information from the supported networks. This makes AcriaScan an
-            invaluable tool for developers, researchers, and anyone interested
-            in monitoring the Polkadot ecosystem.
-          </p>
-        </div>
 
-        <div>
           <h2 className="hover-dot">
-            Setting Up the Project
+            Deployment
             <img
               src="/assets/green-dot.svg"
               className="hover-dot-image"
@@ -146,91 +151,24 @@ function DripsContract() {
             />
           </h2>
           <p>
-            Setting up AcriaScan Explorer is straightforward, thanks to its use
-            of Docker and Node.js. The following steps outline the process:
+            The deployment of Drips Protocol V2 can be done on both local
+            testnets and public networks. For local deployments, the Anvil tool
+            is used to start a local testnet node:
+            <pre>
+              <code>anvil</code>
+            </pre>
+            <p>
+              Environment variables must be set up for public network
+              deployments, including the RPC URL and wallet arguments. The
+              deployment process is initiated using a deployment script:
+            </p>
+            <pre>
+              <code>scripts/deploy.sh</code>
+            </pre>
           </p>
-          <h3>Prerequisites</h3>
-          <p>
-            Before deploying AcriaScan Explorer, ensure that the following
-            packages are installed on your server:
-          </p>
-          <ul>
-            <li>
-              <strong>Docker:</strong>{" "}
-              <code>sudo apt-get install docker.io</code>
-            </li>
-            <li>
-              <strong>Node.js:</strong> <code>sudo apt-get install nodejs</code>
-            </li>
-            <li>
-              <strong>Angular CLI:</strong>{" "}
-              <code>sudo npm install -g @angular/cli</code>
-            </li>
-          </ul>
-          <h3>Installation</h3>
-          <p>Follow these steps to install and run the AcriaScan Explorer:</p>
-          <ul>
-            <li>
-              <strong>Clone the Repository:</strong>{" "}
-              <code>
-                git clone https://github.com/Acria-Network/xplorerdot.git
-              </code>
-            </li>
-            <li>
-              <strong>Run Harvester:</strong>{" "}
-              <code>cd harvester && docker-compose up --build</code>
-            </li>
-            <li>
-              <strong>Run Explorer API:</strong>{" "}
-              <code>cd explorer-api && docker-compose up --build</code>
-            </li>
-            <li>
-              <strong>Run Explorer GUI:</strong>{" "}
-              <code>cd explorer-gui && npm install && npm start</code>
-            </li>
-            <li>
-              <strong>Build Docker Image for GUI:</strong>{" "}
-              <code>docker build -t appui .</code>
-            </li>
-            <li>
-              <strong>Run the GUI:</strong>{" "}
-              <code>docker run -d --name appui -p 80:80 appui</code>
-            </li>
-          </ul>
-        </div>
 
-        <div>
-          <h2 class="hover-dot">
-            Usage and Roadmap
-            <img
-              src="/assets/green-dot.svg"
-              className="hover-dot-image"
-              alt="green dot"
-            />
-          </h2>
-          <p>
-            AcriaScan Explorer can be used for searching blocks, transactions,
-            and other critical data within the Polkadot, Kusama, and Rococo
-            networks. Its real-time data processing capabilities make it an
-            essential tool for anyone looking to gain insights into these
-            blockchain networks.
-          </p>
-          <p>
-            The project is continuously evolving, with a roadmap that includes
-            new features and improvements. Users and developers are encouraged
-            to contribute to the project by suggesting features or reporting
-            issues on the GitHub repository.
-          </p>
-          <p>
-            The open-source nature of AcriaScan Explorer makes it an excellent
-            platform for collaboration, learning, and innovation within the
-            blockchain community.
-          </p>
-        </div>
-
-        <div>
           <h2 className="hover-dot">
-            Contributing and License
+            Verification and Publishing
             <img
               src="/assets/green-dot.svg"
               className="hover-dot-image"
@@ -238,22 +176,18 @@ function DripsContract() {
             />
           </h2>
           <p>
-            Contributions are highly welcomed and appreciated. Developers can
-            contribute by forking the project, creating feature branches, and
-            submitting pull requests. The collaborative spirit of the
-            open-source community drives the continued improvement and
-            innovation of the AcriaScan Explorer.
+            After deploying the contracts, verification can be performed using
+            services like Etherscan, Sourcify, or Blockscout. This can be done
+            by running the verification script with the following command:
+            <pre>
+              <code>scripts/verify.sh &lt;DRIPS_DEPLOYER&gt;</code>
+            </pre>
+            The <code>&lt;DRIPS_DEPLOYER&gt;</code> parameter should be the
+            address of the deployed DripsDeployer contract.
           </p>
-          <p>
-            AcriaScan Explorer is distributed under the MIT License, which
-            allows for extensive use, modification, and distribution while
-            ensuring that the original creators are credited for their work.
-          </p>
-        </div>
 
-        <div>
           <h2 className="hover-dot">
-            Contact and Acknowledgements
+            Conclusion
             <img
               src="/assets/green-dot.svg"
               className="hover-dot-image"
@@ -261,14 +195,11 @@ function DripsContract() {
             />
           </h2>
           <p>
-            For more information, visit the project repository:{" "}
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/polkadot-substrate-block-explorer"
-            >
-              here
-            </a>
-            .
+            Drips Protocol V2 provides a powerful and flexible solution for
+            managing ERC-20 token distribution on Ethereum. Its integration with
+            modern development tools and secure deployment practices make it
+            suitable for various decentralized applications, ensuring efficient
+            and transparent token management.
           </p>
         </div>
       </div>
@@ -276,4 +207,4 @@ function DripsContract() {
   );
 }
 
-export default DripsContract;
+export default DripsProtocol;

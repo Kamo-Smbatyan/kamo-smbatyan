@@ -131,7 +131,7 @@ function Blog() {
           className="bloglink real-bloglink"
           to="evm"
         >
-          EVM vs Non-EVM
+          EVM
         </NavLink>
       </div>
 
