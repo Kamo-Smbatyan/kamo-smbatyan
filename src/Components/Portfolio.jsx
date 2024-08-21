@@ -11,6 +11,7 @@ import Substrate from "./Portfolio/Substrate";
 import Polkadot from "./Portfolio/Polkadot";
 import React from "./Portfolio/React";
 import BlockExplorer from "./Portfolio/BlockExplorer";
+import Ecommerce from "./Portfolio/Ecommerce";
 
 // portfolio projects
 import ParalinkNetwork from "./Portfolio/Projects/ParalinkNetwork";
@@ -90,7 +91,7 @@ function Portfolio() {
         to="blockchain"
       >
         Blockchain
-        <span>4</span>
+        <span>5</span>
       </NavLink>
 
       <NavLink
@@ -130,6 +131,14 @@ function Portfolio() {
         Block Explorer
         <span>1</span>
       </NavLink>
+      <NavLink
+        onClick={() => handleNavLinkClick('ecommerce')}
+        className={activeLink === 'ecommerce' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
+        to="ecommerce"
+      >
+        Ecommerce
+        <span>1</span>
+      </NavLink>
       </div>
       <div className="rtroutes">
         <Routes>
@@ -143,6 +152,7 @@ function Portfolio() {
           <Route path="polkadot" element={<Polkadot />}></Route>
           <Route path="react" element={<React />}></Route>
           <Route path="block-explorer" element={<BlockExplorer />}></Route>
+          <Route path="Ecommerce" element={<Ecommerce />}></Route>
 
           {/* portfolio projects */}
           <Route path="health-care-hospital" element={<Healthcare />}></Route>
