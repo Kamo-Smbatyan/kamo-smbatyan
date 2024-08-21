@@ -70,6 +70,15 @@ li {
 }
 
 /* common style */
+
+/* home style */
+.glitch-title {
+  display: flex;
+}
+.glitch-title img {
+  width: 50%;
+  align-items: center;
+}
 .blog-tag {
   padding: 6px 16px;
   margin: 4px 8px;

@@ -14,6 +14,19 @@ function Home() {
   return (
     <div className="home-pan">
       <div>
+        <div style={{paddingBottom: "28px"}}>
+        <h2 class="glitch-title"><img src="/assets/icons/blockchain.svg" alt="blockchain" /></h2>
+        <div class="glitch-lines"></div>
+          <p>
+            Blockchain and decentralized tech are changing how we handle data
+            and trust.
+          </p>
+          <p>
+            They put control back in people's hands by removing the third party.
+          </p>
+          <p>These technologies make everything more transparent and secure.</p>
+          <p>I'm excited to see how they shape our future.</p>
+        </div>
         <div className="home-grp">
           <h2 className="home-subtitle">
             <img
