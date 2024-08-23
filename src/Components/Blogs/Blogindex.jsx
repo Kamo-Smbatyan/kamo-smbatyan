@@ -20,7 +20,7 @@ function Blogindex() {
       </h3>
       </div>
       <div>
-        <h3> Search by Technology Tags</h3>
+        <h3> Technology Tags</h3>
         <div className="tag-grp">
           <span className="blog-tag">React.JS</span>
           <span className="blog-tag">Rust</span>
@@ -31,6 +31,10 @@ function Blogindex() {
           <span className="blog-tag">ink</span>
           <span className="blog-tag">Tailwind CSS</span>
           <span className="blog-tag">Polkadot</span>
+          <span className="blog-tag">ZK-rollup</span>
+          <span className="blog-tag">Bridge</span>
+          <span className="blog-tag">Layer2</span>
+          <span className="blog-tag">Offchain</span>
         </div>
       </div>
     </div>
