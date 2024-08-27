@@ -22,11 +22,7 @@ function About() {
          <img src="/logo.svg" className="about-logo" alt="hylcore" />   Hylcore
           </strong>{" "}
           with a passion for precision, constantly pushing the limits of
-          front-end and blockchain tech. <br /> My craft is all about creating
-          dynamic user experiences with{" "}
-          <strong style={{ fontSize: "24px", color: "#00d8ff" }}> <img src="./assets/react.webp" className="about-logo" alt="React logo" /> React</strong>
-          —a tool that’s second nature to me.
-        </p>
+          front-end and blockchain tech.</p> 
         <p>
           <strong style={{ fontSize: "24px", color: "var(--pink)" }}>
            <img src="./assets/polkadot.webp" className="about-logo" alt="polkadot" /> Polkadot
@@ -39,6 +35,13 @@ function About() {
           decentralized systems. <br /> I’m focused on building secure, scalable
           solutions that are ready for tomorrow.
         </p>
+
+        <p> My craft is all about creating
+          dynamic user experiences with{" "}
+          <strong style={{ fontSize: "24px", color: "#00d8ff" }}> <img src="./assets/react.webp" className="about-logo" alt="React logo" /> React</strong>
+          —a tool that’s second nature to me.
+        </p>   
+      
         <p>
           Blockchain is the key to the next era of innovation, and I’m here to
           lead that charge. <br /> Every line of code I write is a step toward a

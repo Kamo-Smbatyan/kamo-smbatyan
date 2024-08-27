@@ -14,9 +14,11 @@ function Home() {
   return (
     <div className="home-pan">
       <div>
-        <div style={{paddingBottom: "28px"}}>
-        <h2 class="glitch-title"><img src="/assets/icons/blockchain.svg" alt="blockchain" /></h2>
-        <div class="glitch-lines"></div>
+        <div style={{ paddingBottom: "28px" }}>
+          <h2 class="glitch-title">
+            <img src="/assets/icons/blockchain.svg" alt="blockchain" />
+          </h2>
+          <div class="glitch-lines"></div>
           <p>
             Blockchain and decentralized tech are changing how we handle data
             and trust.
@@ -70,50 +72,6 @@ function Home() {
               style={{ width: "12px" }}
               alt="green-dot"
             />{" "}
-            React.JS
-            <img
-              src="/assets/react.webp"
-              alt="react logo"
-              style={{
-                width: "56px",
-                height: "auto",
-                borderRadius: "100%",
-                marginRight: "10px",
-              }}
-            />
-          </h2>
-          <h3>The Secret Sauce for Awesome Web Apps</h3>
-          <p>
-            {" "}
-            Reusability - Why reinvent the wheel when you can just copy-paste a
-            component?
-          </p>
-          <p>
-            Speed - React’s virtual DOM is so fast, it might as well have a
-            cape.{" "}
-          </p>
-          <p>
-            Flexibility - React bends, but never breaks—like a coding yoga
-            master.{" "}
-          </p>
-          <p>
-            {" "}
-            Ecosystem - With React, there's a package for everything—because who
-            doesn’t love a shortcut?
-          </p>
-          <p>
-            React.JS is the superhero of web development, offering reusable
-            components, lightning-fast performance, flexibility, and a vast
-            ecosystem that makes building awesome web apps a breeze.
-          </p>
-        </div>
-        <div className="home-grp">
-          <h2 className="home-subtitle">
-            <img
-              src="/assets/green-dot.svg"
-              style={{ width: "12px" }}
-              alt="green-dot"
-            />{" "}
             Rust & Substrate
             <img
               src="/assets/rust.webp"
@@ -151,6 +109,50 @@ function Home() {
             Rust and Substrate make blockchain development fast, safe, and fun,
             turning complex projects into scalable, bug-free, and customizable
             creations.
+          </p>
+        </div>
+        <div className="home-grp">
+          <h2 className="home-subtitle">
+            <img
+              src="/assets/green-dot.svg"
+              style={{ width: "12px" }}
+              alt="green-dot"
+            />{" "}
+            React.JS
+            <img
+              src="/assets/react.webp"
+              alt="react logo"
+              style={{
+                width: "56px",
+                height: "auto",
+                borderRadius: "100%",
+                marginRight: "10px",
+              }}
+            />
+          </h2>
+          <h3>The Secret Sauce for Awesome Web Apps</h3>
+          <p>
+            {" "}
+            Reusability - Why reinvent the wheel when you can just copy-paste a
+            component?
+          </p>
+          <p>
+            Speed - React’s virtual DOM is so fast, it might as well have a
+            cape.{" "}
+          </p>
+          <p>
+            Flexibility - React bends, but never breaks—like a coding yoga
+            master.{" "}
+          </p>
+          <p>
+            {" "}
+            Ecosystem - With React, there's a package for everything—because who
+            doesn’t love a shortcut?
+          </p>
+          <p>
+            React.JS is the superhero of web development, offering reusable
+            components, lightning-fast performance, flexibility, and a vast
+            ecosystem that makes building awesome web apps a breeze.
           </p>
         </div>
       </div>

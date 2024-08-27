@@ -11,6 +11,8 @@ const SubstrateAndPolkadot = React.lazy(() =>
 const LayerTwo = React.lazy(() => import("./Blogs/LayerTwo"));
 const Bridge = React.lazy(() => import("./Blogs/Bridge"));
 const ZkRollup = React.lazy(() => import("./Blogs/ZkRollup"));
+const AiBlockchain = React.lazy(() => import("./Blogs/AiBlockchain"));
+
 
 
 function Blog() {
@@ -133,6 +135,19 @@ function Blog() {
         >
           EVM
         </NavLink>
+        <NavLink
+          onClick={myfun1}
+          style={({ isActive }) => ({
+            backgroundColor: isActive ? "#f6f6f6" : "",
+            color: isActive ? "#222222" : "#2c3e50",
+            fontWeight: isActive ? "600" : "400",
+            borderRight: isActive ? "4px solid #24cc85" : "#24cc85",
+          })}
+          className="bloglink real-bloglink"
+          to="ai-and-blockchain"
+        >
+         Blockchain & AI
+        </NavLink>
       </div>
 
       <div className="blogsroutes">
@@ -226,6 +241,21 @@ function Blog() {
                 }
               >
                 <ZkRollup />
+              </React.Suspense>
+            }
+          ></Route>
+        
+        <Route
+            path="ai-and-blockchain"
+            element={
+              <React.Suspense
+                fallback={
+                  <div style={{ paddingTop: "10%", paddingLeft: "40%" }}>
+                    <Rings></Rings>
+                  </div>
+                }
+              >
+                <AiBlockchain />
               </React.Suspense>
             }
           ></Route>

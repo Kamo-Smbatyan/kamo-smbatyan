@@ -45,3 +45,18 @@ a:hover {
   padding-top: 48px;
   padding-bottom: 24px;
 }
+.ai-blog-sub-img {
+  width: 20vw;
+  height: 13vh;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.ai-blog-sub-img img {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.ai-blog-sub-img img:hover {
+  transform: scale(1.25);
+} 

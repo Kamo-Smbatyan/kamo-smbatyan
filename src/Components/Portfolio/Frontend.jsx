@@ -66,6 +66,24 @@ function Whatisreact() {
             <p>An open source interface for the Zenlink protocol</p>
           </div>
         </div>
+        <div
+          className="projects-overview"
+          onClick={() => toDetailPage("/portfolio/travel-explorer")}
+        >
+          <img
+            src="/assets/travel explorer.webp"
+            className="portfolio-fv"
+            alt="explorer Indonesia"
+          />
+          <div className="project-overview-sub">
+            <h2>Travel Explorer</h2>
+            <p>
+              A single-page landing site designed to provide an engaging and
+              informative experience for users interested in traveling to
+              Indonesia, Nepal, and Thailand.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

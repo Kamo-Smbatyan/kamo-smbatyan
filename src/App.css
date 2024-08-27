@@ -113,7 +113,7 @@ li {
 }
 .portfolio-tag span {
   position: absolute;
-  background-color: red;
+  background-color: rgb(255, 19, 19);
   color: white;
   border-radius: 100%;
   padding: 1px 7px;

@@ -12,6 +12,7 @@ import Polkadot from "./Portfolio/Polkadot";
 import React from "./Portfolio/React";
 import BlockExplorer from "./Portfolio/BlockExplorer";
 import Ecommerce from "./Portfolio/Ecommerce";
+import Ai from "./Portfolio/Ai";
 
 // portfolio projects
 import ParalinkNetwork from "./Portfolio/Projects/ParalinkNetwork";
@@ -26,6 +27,11 @@ import GemforgeTool from "./Portfolio/Projects/GemforgeTool";
 import ErcContract from "./Portfolio/Projects/ErcContract";
 import EliseEcommerce from "./Portfolio/Projects/EliseEcommerce";
 import LayerSwap from "./Portfolio/Projects/LayerSwap";
+import BicycleStore from "./Portfolio/Projects/BicycleStore";
+import IconGenerator from "./Portfolio/Projects/IconGenerator";
+import KicksEcommerce from "./Portfolio/Projects/KicksEcommerce";
+import SignsForTrucks from "./Portfolio/Projects/SignsForTrucks";
+import TravelExplorer from "./Portfolio/Projects/TravelExplorer";
 
 // import css file
 import "./Components.css";
@@ -33,7 +39,7 @@ import "./Components.css";
 function Portfolio() {
   const [state, setstate] = useState("flex");
   // State to manage the active link
-  const [activeLink, setActiveLink] = useState('');
+  const [activeLink, setActiveLink] = useState("");
 
   useEffect(() => {
     document.title = "Hylcore | Portfolio";
@@ -76,69 +82,112 @@ function Portfolio() {
         </button>
       </div>
       <div style={{ display: state }} className="portfolio-sidebar">
-      <NavLink
-        onClick={() => handleNavLinkClick('frontend')}
-        className={activeLink === 'frontend' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="frontend"
-      >
-        Frontend
-        <span>3</span>
-      </NavLink>
+        {/* blockchain */}
+        <NavLink
+          onClick={() => handleNavLinkClick("blockchain")}
+          className={
+            activeLink === "blockchain"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="blockchain"
+        >
+          Blockchain
+          <span>5</span>
+        </NavLink>
 
-      <NavLink
-        onClick={() => handleNavLinkClick('blockchain')}
-        className={activeLink === 'blockchain' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="blockchain"
-      >
-        Blockchain
-        <span>5</span>
-      </NavLink>
+        {/* polkadot */}
+        <NavLink
+          onClick={() => handleNavLinkClick("polkadot")}
+          className={
+            activeLink === "polkadot"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="polkadot"
+        >
+          Polkadot
+          <span>2</span>
+        </NavLink>
 
-      <NavLink
-        onClick={() => handleNavLinkClick('substrate')}
-        className={activeLink === 'substrate' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="substrate"
-      >
-        Substrate
-        <span>2</span>
-      </NavLink>
+        {/* substrate */}
+        <NavLink
+          onClick={() => handleNavLinkClick("substrate")}
+          className={
+            activeLink === "substrate"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="substrate"
+        >
+          Substrate
+          <span>2</span>
+        </NavLink>
+        {/* block explorer */}
+        <NavLink
+          onClick={() => handleNavLinkClick("block-explorer")}
+          className={
+            activeLink === "block-explorer"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="block-explorer"
+        >
+          Block Explorer
+          <span>1</span>
+        </NavLink>
+        {/* AI */}
+        <NavLink
+          onClick={() => handleNavLinkClick("ai")}
+          className={
+            activeLink === "ai" ? "portfolio-tag gradient-pan" : "portfolio-tag"
+          }
+          to="ai"
+        >
+          AI
+          <span>1</span>
+        </NavLink>
 
-    
-      <NavLink
-        onClick={() => handleNavLinkClick('polkadot')}
-        className={activeLink === 'polkadot' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="polkadot"
-      >
-        Polkadot
-        <span>2</span>
-      </NavLink>
+        {/* e-commerce */}
+        <NavLink
+          onClick={() => handleNavLinkClick("ecommerce")}
+          className={
+            activeLink === "ecommerce"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="ecommerce"
+        >
+          Ecommerce
+          <span>4</span>
+        </NavLink>
+        {/* frontend */}
+        <NavLink
+          onClick={() => handleNavLinkClick("frontend")}
+          className={
+            activeLink === "frontend"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="frontend"
+        >
+          Frontend
+          <span>4</span>
+        </NavLink>
 
-   
-      <NavLink
-        onClick={() => handleNavLinkClick('react')}
-        className={activeLink === 'react' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="react"
-      >
-        React.JS
-        <span>3</span>
-      </NavLink>
-
-      <NavLink
-        onClick={() => handleNavLinkClick('block-explorer')}
-        className={activeLink === 'block-explorer' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="block-explorer"
-      >
-        Block Explorer
-        <span>1</span>
-      </NavLink>
-      <NavLink
-        onClick={() => handleNavLinkClick('ecommerce')}
-        className={activeLink === 'ecommerce' ? 'portfolio-tag gradient-pan' : 'portfolio-tag'}
-        to="ecommerce"
-      >
-        Ecommerce
-        <span>1</span>
-      </NavLink>
+        {/* react */}
+        <NavLink
+          onClick={() => handleNavLinkClick("react")}
+          className={
+            activeLink === "react"
+              ? "portfolio-tag gradient-pan"
+              : "portfolio-tag"
+          }
+          to="react"
+        >
+          React.JS
+          <span>7</span>
+        </NavLink>
       </div>
       <div className="rtroutes">
         <Routes>
@@ -152,7 +201,8 @@ function Portfolio() {
           <Route path="polkadot" element={<Polkadot />}></Route>
           <Route path="react" element={<React />}></Route>
           <Route path="block-explorer" element={<BlockExplorer />}></Route>
-          <Route path="Ecommerce" element={<Ecommerce />}></Route>
+          <Route path="ecommerce" element={<Ecommerce />}></Route>
+          <Route path="ai" element={<Ai />}></Route>
 
           {/* portfolio projects */}
           <Route path="health-care-hospital" element={<Healthcare />}></Route>
@@ -162,11 +212,22 @@ function Portfolio() {
           <Route path="acria-scan-explorer" element={<Acria />}></Route>
           <Route path="subsocial" element={<Subsocial />}></Route>
           <Route path="wagerr-smart-contract" element={<Wagerr />}></Route>
-          <Route path="drips-network-contract" element={<DripsContract />}></Route>
-          <Route path="gemforge-command-line-tool" element={<GemforgeTool />}></Route>
+          <Route
+            path="drips-network-contract"
+            element={<DripsContract />}
+          ></Route>
+          <Route
+            path="gemforge-command-line-tool"
+            element={<GemforgeTool />}
+          ></Route>
           <Route path="erc-20-contract" element={<ErcContract />}></Route>
           <Route path="elise-ecommerce" element={<EliseEcommerce />}></Route>
           <Route path="layer-swap" element={<LayerSwap />}></Route>
+          <Route path="bicycle-store" element={<BicycleStore />}></Route>
+          <Route path="icon-generator" element={<IconGenerator />}></Route>
+          <Route path="kicks-ecommerce" element={<KicksEcommerce />}></Route>
+          <Route path="signs-for-trucks" element={<SignsForTrucks />}></Route>
+          <Route path="travel-explorer" element={<TravelExplorer />}></Route>
         </Routes>
       </div>
     </div>
