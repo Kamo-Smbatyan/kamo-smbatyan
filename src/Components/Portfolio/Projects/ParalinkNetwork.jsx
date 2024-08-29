@@ -55,10 +55,10 @@ function ParalinkNetwork() {
           SherpaX and MiniX will be added as a parachain.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">substrate</span>
-          <span className="blog-tag">polkadot</span>
+          <span className="substrate-tag blog-tag">substrate</span>
+          <span className="polkadot-tag blog-tag">polkadot</span>
           <span className="blog-tag">oracle</span>
-          <span className="blog-tag">rust</span>
+          <span className="rust-tag blog-tag">rust</span>
           <span className="blog-tag">docker</span>
         </div>
       </div>

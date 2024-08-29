@@ -50,11 +50,11 @@ function LayerswapV8() {
           and decentralized asset exchanges across multiple blockchain networks.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">Rust</span>
-          <span className="blog-tag">Typescript</span>
+          <span className="rust-tag blog-tag">Rust</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
           <span className="blog-tag">Bitcoin</span>
           <span className="blog-tag">Solidity</span>
-          <span className="blog-tag">EVM</span>
+          <span className="eth-tag blog-tag">EVM</span>
           <span className="blog-tag">Solana</span>
           <span className="blog-tag">Ton</span>
         </div>

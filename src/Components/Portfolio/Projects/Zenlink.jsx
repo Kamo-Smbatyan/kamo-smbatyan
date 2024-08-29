@@ -40,9 +40,9 @@ function Zenlink() {
           </div>
         </div>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">Typescript</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
           <span className="blog-tag">Zenlink</span>
-          <span className="blog-tag">Polkadot</span>
+          <span className="polkadot-tag blog-tag">Polkadot</span>
           <span className="blog-tag">MonoRepo</span>
         </div>
       </div>

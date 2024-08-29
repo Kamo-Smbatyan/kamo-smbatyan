@@ -56,10 +56,10 @@ function Healthcare() {
           information, and tools.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">API</span>
-          <span className="blog-tag">MUI</span>
-          <span className="blog-tag">Responsive Design</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">API</span>
+          <span className="frontend-tag blog-tag">MUI</span>
+          <span className="frontend-tag blog-tag">Responsive Design</span>
         </div>
       </div>
 

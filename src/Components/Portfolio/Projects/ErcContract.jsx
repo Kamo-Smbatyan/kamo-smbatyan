@@ -44,11 +44,11 @@ function ERC20Contract() {
           making it an invaluable resource for developers and learners alike.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">Solidity</span>
-          <span className="blog-tag">ERC-20</span>
-          <span className="blog-tag">Ethereum</span>
+          <span className="eth-tag blog-tag">Solidity</span>
+          <span className="eth-tag blog-tag">ERC-20</span>
+          <span className="eth-tag blog-tag">Ethereum</span>
           <span className="blog-tag">Smart Contracts</span>
-          <span className="blog-tag">Blockchain</span>
+          <span className="blockchain-tag blog-tag">Blockchain</span>
           <span className="blog-tag">Cryptocurrency</span>
         </div>
       </div>

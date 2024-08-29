@@ -40,13 +40,13 @@ function ChainX() {
           operates as a relay chain alongside Polkadot and Kusama.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">substrate</span>
-          <span className="blog-tag">layer2</span>
-          <span className="blog-tag">bitcoin</span>
-          <span className="blog-tag">evm</span>
-          <span className="blog-tag">smart contract</span>
-          <span className="blog-tag">move</span>
-          <span className="blog-tag">multichain</span>
+          <span className="substrate-tag blog-tag">substrate</span>
+          <span className="blog-tag">Layer2</span>
+          <span className="blog-tag">Bitcoin</span>
+          <span className="eth-tag blog-tag">EVM</span>
+          <span className="blog-tag">Smart contract</span>
+          <span className="blog-tag">Move</span>
+          <span className="blog-tag">Multichain</span>
         </div>
       </div>
 

@@ -42,9 +42,9 @@ function Acria() {
           Real-time multi-chain Explorer for Polkadot, Kusama, Rococo networks.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">Blockchain</span>
-          <span className="blog-tag">Polkadot</span>
-          <span className="blog-tag">Typescript</span>
+          <span className="blockchain-tag blog-tag">Blockchain</span>
+          <span className="polkadot-tag blog-tag">Polkadot</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
         </div>
       </div>
 

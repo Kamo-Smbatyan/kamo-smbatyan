@@ -22,18 +22,18 @@ function Blogindex() {
       <div>
         <h3> Technology Tags</h3>
         <div className="tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">Rust</span>
-          <span className="blog-tag">SEO</span>
-          <span className="blog-tag">Substrate</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="rust-tag blog-tag">Rust</span>
+          <span className="frontend-tag blog-tag">SEO</span>
+          <span className="substrate-tag blog-tag">Substrate</span>
           <span className="blog-tag">Solidity</span>
-          <span className="blog-tag">EVM</span>
+          <span className="eth-tag blog-tag">EVM</span>
           <span className="blog-tag">ink</span>
-          <span className="blog-tag">Tailwind CSS</span>
-          <span className="blog-tag">Polkadot</span>
           <span className="blog-tag">ZK-rollup</span>
           <span className="blog-tag">Bridge</span>
+          <span className="frontend-tag blog-tag">Tailwind CSS</span>
           <span className="blog-tag">Layer2</span>
+          <span className="polkadot-tag blog-tag">Polkadot</span>
           <span className="blog-tag">Offchain</span>
         </div>
       </div>

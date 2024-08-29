@@ -51,11 +51,6 @@ function Blog() {
   }
   return (
     <div>
-      <div className="mobileresponsive">
-        <button id="responsive" onClick={myfun}>
-          Click to open Menu
-        </button>
-      </div>
       <div style={{ display: state }} className="blogsidebar">
         <NavLink
           onClick={myfun1}

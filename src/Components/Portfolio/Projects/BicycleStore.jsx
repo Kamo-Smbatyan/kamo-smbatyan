@@ -48,9 +48,9 @@ function BicycleStore() {
           seamless shopping experience for cycling enthusiasts.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">Next.JS</span>
-          <span className="blog-tag">E-commerce</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">Next.JS</span>
+          <span className="frontend-tag blog-tag">E-commerce</span>
         </div>
       </div>
 

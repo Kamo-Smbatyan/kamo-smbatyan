@@ -67,12 +67,12 @@ function Subsocial() {
           community-driven social media experience.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
           <span className="blog-tag">Template</span>
           <span className="blog-tag">MUI</span>
           <span className="blog-tag">Subsocial</span>
           <span className="blog-tag">Next.JS</span>
-          <span className="blog-tag">Substrate</span>
+          <span className="substrate-tag blog-tag">Substrate</span>
           <span className="blog-tag">Web3</span>
           <span className="blog-tag">Medium-clone</span>
           <span className="blog-tag">Social Media</span>

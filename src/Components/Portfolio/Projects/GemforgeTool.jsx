@@ -51,8 +51,8 @@ function Gemforge() {
         <div className="project-tag-grp tag-grp">
           <span className="blog-tag">NPM</span>
           <span className="blog-tag">Solidity</span>
-          <span className="blog-tag">Typescript</span>
-          <span className="blog-tag">EVM</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
+          <span className="eth-tag blog-tag">EVM</span>
           <span className="blog-tag">Diamond Standard</span>
           <span className="blog-tag">Eip-2535</span>
           <span className="blog-tag">Bin</span>

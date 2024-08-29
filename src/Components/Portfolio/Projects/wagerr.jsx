@@ -47,12 +47,12 @@ function Wagerr() {
           language for the Polkadot ecosystem.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">Polkadot</span>
+          <span className="polkadot-tag blog-tag">Polkadot</span>
           <span className="blog-tag">Dapp</span>
           <span className="blog-tag">Ink</span>
-          <span className="blog-tag">Typescript</span>
-          <span className="blog-tag">Rust</span>
-          <span className="blog-tag">Typescript</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
+          <span className="rust-tag blog-tag">Rust</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
         </div>
       </div>
 

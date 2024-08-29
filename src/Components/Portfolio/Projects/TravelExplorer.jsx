@@ -49,11 +49,11 @@ function TravelExplorer() {
           to Indonesia, Nepal, and Thailand.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React</span>
-          <span className="blog-tag">Next.js</span>
-          <span className="blog-tag">Typescript</span>
-          <span className="blog-tag">React-Scroll</span>
+          <span className="frontend-tag blog-tag">React</span>
+          <span className="frontend-tag blog-tag">Next.js</span>
+          <span className="frontend-tag blog-tag">Typescript</span>
           <span className="blog-tag">Swiper</span>
+          <span className="frontend-tag blog-tag">React-Scroll</span>
         </div>
       </div>
 

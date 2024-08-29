@@ -24,8 +24,8 @@ function AiBlockchain() {
           </p>
         </div>
         <div className="blog-tag-grp">
-          <span className="blog-tag">Blockchain</span>
-          <span className="blog-tag">AI</span>
+          <span className="blockchain-tag blog-tag">Blockchain</span>
+          <span className="ai-tag blog-tag">AI</span>
         </div>
         <h3 className="post-date"> Posted on November 17, 2023</h3>
       </div>

@@ -49,10 +49,10 @@ function EliseEcommerce() {
           platform!
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React</span>
-          <span className="blog-tag">Next.js</span>
+          <span className="frontend-tag blog-tag">React</span>
+          <span className="frontend-tag blog-tag">Next.js</span>
           <span className="blog-tag">ChakraUI</span>
-          <span className="blog-tag">E-commerce</span>
+          <span className="frontend-tag blog-tag">E-commerce</span>
           <span className="blog-tag">Web Development</span>
         </div>
       </div>

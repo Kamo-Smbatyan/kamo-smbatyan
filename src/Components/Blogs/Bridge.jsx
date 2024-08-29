@@ -25,7 +25,7 @@ function Bridge() {
           </p>
         </div>
         <div className="blog-tag-grp">
-          <span className="blog-tag">Blockchain</span>
+          <span className="blockchain-tag blog-tag">Blockchain</span>
           <span className="blog-tag">Bridge</span>
         </div>
         <h3 className="post-date"> Posted on September 24, 2023</h3>

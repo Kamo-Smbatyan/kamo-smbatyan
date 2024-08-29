@@ -21,8 +21,8 @@ function Reactseo() {
           <div></div>
         </div>
         <div className="blog-tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">SEO</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">SEO</span>
         </div>
         
         <h3 className="post-date"> Posted on July 20, 2023</h3>

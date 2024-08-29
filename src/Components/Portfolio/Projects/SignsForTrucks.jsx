@@ -46,11 +46,11 @@ function SignsForTrucks() {
           a better React js experience
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">Next.JS</span>
-          <span className="blog-tag">Frontend</span>
-          <span className="blog-tag">E-commerce</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">Next.JS</span>
+          <span className="frontend-tag blog-tag">E-commerce</span>
           <span className="blog-tag">Docker</span>
+          <span className="frontend-tag blog-tag">Frontend</span>
         </div>
       </div>
 

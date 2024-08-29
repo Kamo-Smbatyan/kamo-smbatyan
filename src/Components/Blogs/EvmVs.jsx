@@ -29,8 +29,8 @@ function Evm() {
           </p>
         </div>
         <div className="blog-tag-grp">
-          <span className="blog-tag">Ethereum</span>
-          <span className="blog-tag">EVM</span>
+          <span className="eth-tag blog-tag">Ethereum</span>
+          <span className="eth-tag blog-tag">EVM</span>
         </div>
         <h3 className="post-date"> Posted on November 16, 2023</h3>
       </div>

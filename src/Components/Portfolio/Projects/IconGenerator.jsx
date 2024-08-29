@@ -47,12 +47,12 @@ function IconGenerator() {
           This is a SaaS app. You can generate any icons with an AI
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">Next.JS</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">Next.JS</span>
           <span className="blog-tag">Prisma</span>
-          <span className="blog-tag">E-commerce</span>
+          <span className="frontend-tag blog-tag">E-commerce</span>
           <span className="blog-tag">tRPC</span>
-          <span className="blog-tag">Tailwind CSS</span>
+          <span className="frontend-tag blog-tag">Tailwind CSS</span>
         </div>
       </div>
 

@@ -47,9 +47,9 @@ function DripsProtocol() {
           financial systems and beyond.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">EVM</span>
+          <span className="eth-tag blog-tag">EVM</span>
           <span className="blog-tag">Smart Contract</span>
-          <span className="blog-tag">Blockchain</span>
+          <span className="blockchain-tag blog-tag">Blockchain</span>
           <span className="blog-tag">Funding</span>
         </div>
       </div>

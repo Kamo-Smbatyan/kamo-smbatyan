@@ -44,10 +44,10 @@ function KicksEcommerce() {
         An open-source e-commerce app built with Next.js and Tailwind CSS.
         </p>
         <div className="project-tag-grp tag-grp">
-          <span className="blog-tag">React.JS</span>
-          <span className="blog-tag">Next.JS</span>
-          <span className="blog-tag">E-commerce</span>
-          <span className="blog-tag">Tailwind CSS</span>
+          <span className="frontend-tag blog-tag">React.JS</span>
+          <span className="frontend-tag blog-tag">Next.JS</span>
+          <span className="frontend-tag blog-tag">E-commerce</span>
+          <span className="frontend-tag blog-tag">Tailwind CSS</span>
         </div>
       </div>
 

@@ -76,11 +76,6 @@ function Portfolio() {
 
   return (
     <div>
-      <div className="mobileresponsive">
-        <button id="responsive" onClick={myfun}>
-          Click to open Menu
-        </button>
-      </div>
       <div style={{ display: state }} className="portfolio-sidebar">
         {/* blockchain */}
         <NavLink

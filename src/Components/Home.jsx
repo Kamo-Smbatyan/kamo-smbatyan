@@ -30,7 +30,7 @@ function Home() {
           <p>I'm excited to see how they shape our future.</p>
         </div>
         <div className="home-grp">
-          <h2 className="home-subtitle">
+          <h2 className="home-subtitle home-quote-ttl">
             <img
               src="/assets/gavin wood.webp"
               alt="gavin wood"
@@ -42,8 +42,10 @@ function Home() {
                 border: "2px solid #24cc85",
               }}
             />
-            <div>
+            <div className="home-gavin">
+              <span>
               Gavin Wood's Quote,
+              </span>
               <span
                 style={{
                   fontSize: "18px",

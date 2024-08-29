@@ -83,21 +83,49 @@ li {
   padding: 6px 16px;
   margin: 4px 8px;
   /* border: 1px dotted var(--gray); */
-  background-color: var(--gray);
+  background-color: #eeeeee;
   color: var(--black);
   border-radius: 10px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
+  font-weight: 450;
 
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); */
-  border: 1px dotted #c3c3c3;
+  /* border: 1px dotted #c3c3c3; */
 }
-.blog-tag:hover {
+.frontend-tag {
+  color: #0969da;
+  background-color: #ddf4ff !important;
+}
+.blockchain-tag {
+  color: #510e31 !important;
+  background-color: rgb(213, 179, 246) !important;
+}
+.polkadot-tag {
+  color: #e80c81;
+  background-color: #ffd4e1 !important;
+}
+.substrate-tag {
+  color: #00482a;
+  background-color: #aaf4d5 !important;
+}
+.ai-tag {
+  color: #01645c;
+  background-color: #a7faf3 !important;
+}
+.eth-tag {
+  color: #112b90;
+  background-color: #c8d3ff !important;
+}
+.rust-tag {
+  color: #672601;
+  background-color: #fcd5be !important;
+}
+/* .blog-tag:hover {
   color: var(--black);
   background-color: white;
-  /* border: 1px dotted #ef6ab1; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
+} */
 .portfolio-tag {
   width: fit-content;
   text-decoration: none;
@@ -203,6 +231,7 @@ li {
   overflow-y: hidden;
 }
 .home-quote {
+  font-style: italic;
   font-weight: 400;
 }
 .logo {
@@ -346,9 +375,57 @@ code {
 }
 
 
+/* responsive part for all */
+@media (min-width:1025px) {
+  .mobile-mainnav {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .about-main h1, .about-main p {
+    width: 60vw;
+}
+.glitch-title img {
+  width: 97%;
+  align-items: center;
+}
+.mobile-mainnav {
+  display: block;
+}
+.mainnav {
+  display: none;
+}
+}
+
 @media (max-width: 768px) {
   .mainroutes {
     padding-left: 5%;
     padding-right: 5%;
-  }
+  } 
+  .home-pan {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 30px;
+}
+.home-quote-ttl {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+}
+}
+@media (max-width:425px) {
+  .glitch-title img {
+    width: 105%;
+}
+.home-pan {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 30px;
+}
+.home-gavin {
+  display: flex;
+  flex-direction: column;
+}
+
 }
