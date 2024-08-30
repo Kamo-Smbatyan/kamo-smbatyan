@@ -78,7 +78,7 @@ li {
 .blog-tag {
   padding: 6px 16px;
   margin: 4px 8px;
-  background-color: #eeeeee;
+  background-color: var(--gray);
   color: var(--black);
   border-radius: 10px;
   cursor: pointer;
