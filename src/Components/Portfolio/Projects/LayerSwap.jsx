@@ -53,7 +53,7 @@ function LayerswapV8() {
           <span className="rust-tag blog-tag">Rust</span>
           <span className="frontend-tag blog-tag">Typescript</span>
           <span className="blog-tag">Bitcoin</span>
-          <span className="blog-tag">Solidity</span>
+          <span className="eth-tag blog-tag">Solidity</span>
           <span className="eth-tag blog-tag">EVM</span>
           <span className="blog-tag">Solana</span>
           <span className="blog-tag">Ton</span>

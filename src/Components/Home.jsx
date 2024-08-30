@@ -47,6 +47,7 @@ function Home() {
               Gavin Wood's Quote,
               </span>
               <span
+              className="person-intro"
                 style={{
                   fontSize: "18px",
                   fontWeight: "400",

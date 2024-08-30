@@ -274,6 +274,9 @@ li {
   padding-right: 20%;
   padding-top: 30px;
 }
+.person-intro {
+  color: #7b7b7b;
+}
 .post-date {
   font-weight: 400;
   font-size: 20px;
@@ -458,7 +461,20 @@ code {
     text-decoration: none;
   }
 }
+
+@media (max-width: 920px) {
+  .projects-overview {
+    width: 50vw !important;
+}
+.portfolio-sidebar {
+  width: 24% !important;
+}
+}
+
 @media (max-width: 768px) {
+  .about-main h1, .about-main p {
+    width: 70vw;
+}
   .mainroutes {
     padding-left: 5%;
     padding-right: 5%;
@@ -476,6 +492,9 @@ code {
   }
 }
 @media (max-width: 425px) {
+  .about-main h1, .about-main p {
+    width: 80vw;
+}
   .glitch-title img {
     width: 105%;
   }

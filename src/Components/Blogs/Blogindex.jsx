@@ -26,7 +26,7 @@ function Blogindex() {
           <span className="rust-tag blog-tag">Rust</span>
           <span className="frontend-tag blog-tag">SEO</span>
           <span className="substrate-tag blog-tag">Substrate</span>
-          <span className="blog-tag">Solidity</span>
+          <span className="eth-tag blog-tag">Solidity</span>
           <span className="eth-tag blog-tag">EVM</span>
           <span className="blog-tag">ink</span>
           <span className="blog-tag">ZK-rollup</span>

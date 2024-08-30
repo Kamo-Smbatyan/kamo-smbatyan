@@ -56,6 +56,7 @@ function SubstrateAndPolkadot() {
               </span>
               Gavin Wood,
               <span
+              className="person-intro"
                 style={{
                   fontSize: "18px",
                   fontWeight: "400",
