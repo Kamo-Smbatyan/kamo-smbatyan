@@ -24,8 +24,8 @@ function About() {
           with a passion for precision, constantly pushing the limits of
           front-end and blockchain tech.</p> 
         <p>
-          <strong style={{ fontSize: "24px", color: "var(--pink)" }}>
-           <img src="./assets/polkadot.webp" className="about-logo" alt="polkadot" /> Polkadot
+          <strong style={{ fontSize: "24px", color: "var(--black)" }}>
+           <img src="./assets/rust.webp" className="about-logo" alt="rust" /> Rust
           </strong>{" "}
           and{" "}
           <strong style={{ fontSize: "24px", color: "var(--black)" }}>

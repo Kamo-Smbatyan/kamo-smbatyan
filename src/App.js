@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import Home from "./Components/Home";
 import Blog from "./Components/Blog";
@@ -8,16 +8,23 @@ import { Rings } from "react-loader-spinner";
 const Portfolio = React.lazy(() => import("./Components/Portfolio"));
 
 function App() {
+  const [mobileNavVisible, setMobileNavVisible] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavVisible(!mobileNavVisible);
+  };
+
   return (
     <div className="top-div">
+      {/* Mobile Navigation */}
       <div className="mobile-mainnav">
         <NavLink
+          to="/"
+          className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
-          className="bloglink1"
-          to="/"
         >
           <img
             src="/logo.svg"
@@ -25,57 +32,73 @@ function App() {
             alt="hylcore-V logo"
           ></img>
         </NavLink>
-        <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
-            fontWeight: isActive ? "600" : "400",
-          })}
-          className="bloglink1"
-          to="/"
+        <button
+          className={`hamburger-btn ${mobileNavVisible ? "open" : ""}`}
+          onClick={toggleMobileNav}
         >
-          Home
-        </NavLink>
-
-        <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
-            fontWeight: isActive ? "600" : "400",
-          })}
-          className="bloglink1"
-          to="/blogs"
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </button>
+        <div
+          className={`mobile-nav-links ${mobileNavVisible ? "show" : ""}`}
         >
-          Blogs
-        </NavLink>
-        <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
-            fontWeight: isActive ? "600" : "400",
-          })}
-          className="bloglink1"
-          to="/portfolio"
-        >
-          Portfolio
-        </NavLink>
-
-        <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
-            fontWeight: isActive ? "600" : "400",
-          })}
-          className="bloglink1"
-          to="/about"
-        >
-          About
-        </NavLink>
+          <NavLink
+            to="/"
+            className="bloglink1"
+            style={({ isActive }) => ({
+              color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
+              fontWeight: isActive ? "600" : "400",
+            })}
+            onClick={() => setMobileNavVisible(false)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/blogs"
+            className="bloglink1"
+            style={({ isActive }) => ({
+              color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
+              fontWeight: isActive ? "600" : "400",
+            })}
+            onClick={() => setMobileNavVisible(false)}
+          >
+            Blogs
+          </NavLink>
+          <NavLink
+            to="/portfolio"
+            className="bloglink1"
+            style={({ isActive }) => ({
+              color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
+              fontWeight: isActive ? "600" : "400",
+            })}
+            onClick={() => setMobileNavVisible(false)}
+          >
+            Portfolio
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="bloglink1"
+            style={({ isActive }) => ({
+              color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
+              fontWeight: isActive ? "600" : "400",
+            })}
+            onClick={() => setMobileNavVisible(false)}
+          >
+            About
+          </NavLink>
+        </div>
       </div>
+
+      {/* Desktop Navigation */}
       <div className="mainnav">
         <NavLink
+          to="/"
+          className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
-          className="bloglink1"
-          to="/"
         >
           <img
             src="/logo.svg"
@@ -84,44 +107,42 @@ function App() {
           ></img>
         </NavLink>
         <NavLink
+          to="/"
+          className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
-          className="bloglink1"
-          to="/"
         >
           Home
         </NavLink>
-
         <NavLink
+          to="/blogs"
+          className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
-          className="bloglink1"
-          to="/blogs"
         >
           Blogs
         </NavLink>
         <NavLink
+          to="/portfolio"
+          className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
-          className="bloglink1"
-          to="/portfolio"
         >
           Portfolio
         </NavLink>
-
         <NavLink
+          to="/about"
+          className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
-          className="bloglink1"
-          to="/about"
         >
           About
         </NavLink>
@@ -129,23 +150,23 @@ function App() {
 
       <div className="mainroutes">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/blogs/*" element={<Blog />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs/*" element={<Blog />} />
           <Route
             path="/portfolio/*"
             element={
               <React.Suspense
                 fallback={
                   <div style={{ paddingTop: "10%", paddingLeft: "40%" }}>
-                    <Rings></Rings>
+                    <Rings />
                   </div>
                 }
               >
                 <Portfolio />
               </React.Suspense>
             }
-          ></Route>
-          <Route path="/about" element={<About />}></Route>
+          />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </div>
