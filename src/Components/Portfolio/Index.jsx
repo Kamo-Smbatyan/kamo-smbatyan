@@ -83,20 +83,6 @@ function Index() {
         </div>
         <div
           className="projects-overview"
-          onClick={() => toDetailPage("/portfolio/lgu-timetable")}
-        >
-          <img
-            src="/assets/lgu timetable.webp"
-            className="portfolio-fv"
-            alt="LGU TimTable"
-          />
-          <div className="project-overview-sub">
-            <h2>LGU TimeTable</h2>
-            <p>LGU time table front-end app</p>
-          </div>
-        </div>
-        <div
-          className="projects-overview"
           onClick={() => toDetailPage("/portfolio/travel-explorer")}
         >
           <img
