@@ -31,11 +31,8 @@ function Zenlink() {
           </div>
           <div className="project-link">
             <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/zenlink-UI"
-            >
-              Github
+            <a className="private-link" href="#">
+              Github: <span className="disabled-link"> Private</span>
             </a>
           </div>
         </div>
@@ -212,18 +209,11 @@ function Zenlink() {
             />
           </h2>
           <p>
-            The Zenlink Protocol Interface is licensed under the{" "}
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/zenlink-UI/blob/main/LICENSE"
-            >
-              {" "}
-              LGPL
-            </a>{" "}
-            License, which allows for both open-source usage and commercial
-            deployment under specific conditions. This choice of license ensures
-            that the project remains accessible to the wider developer community
-            while protecting the core intellectual property.
+            The Zenlink Protocol Interface is licensed under the LGPL License,
+            which allows for both open-source usage and commercial deployment
+            under specific conditions. This choice of license ensures that the
+            project remains accessible to the wider developer community while
+            protecting the core intellectual property.
           </p>
         </div>
       </div>
