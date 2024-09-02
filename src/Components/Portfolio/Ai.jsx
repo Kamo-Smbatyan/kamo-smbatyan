@@ -30,6 +30,7 @@ function Ai() {
             className="portfolio-fv"
             alt="icon generator"
           />
+          
           <div className="project-overview-sub">
             <h2>Icon-AI</h2>
             <p>
