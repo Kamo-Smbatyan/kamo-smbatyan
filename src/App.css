@@ -72,7 +72,7 @@ li {
   display: flex;
 }
 .glitch-title img {
-  width: 50%;
+  width: 30%;
   align-items: center;
 }
 .blog-tag {
@@ -224,6 +224,10 @@ li {
 .home-quote {
   font-style: italic;
   font-weight: 400;
+  background-color: var(--gray);
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-align: center;
 }
 .logo {
   width: 56px;
@@ -390,7 +394,7 @@ code {
     width: 60vw;
   }
   .glitch-title img {
-    width: 97%;
+    width: 50%;
     align-items: center;
   }
   .mobile-mainnav {
@@ -508,16 +512,19 @@ code {
     width: 80vw;
 }
   .glitch-title img {
-    width: 105%;
+    width: 70%;
   }
   .home-pan {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 0%;
+    padding-right: 0%;
     padding-top: 30px;
   }
   .home-gavin {
     display: flex;
     flex-direction: column;
+  }
+  .home-gavin > span {
+    text-align: center;
   }
   .mobile-nav-links {
       display: flex;

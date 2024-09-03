@@ -16,7 +16,7 @@ function Home() {
       <div>
         <div style={{ paddingBottom: "28px" }}>
           <h2 class="glitch-title">
-            <img src="/assets/icons/blockchain.svg" alt="blockchain" />
+            <img src="/assets/blockchain brand.webp" alt="blockchain" />
           </h2>
           <div class="glitch-lines"></div>
           <p>
@@ -62,8 +62,7 @@ function Home() {
           <h3 className="home-quote">
             "In software, we’re not constrained by physical reality; the only
             limits are the limits of our own imagination."
-          </h3>
-          <h3 className="home-quote">
+        <br />
             "The pace of innovation in the blockchain space is unlike anything
             we’ve seen before"
           </h3>
