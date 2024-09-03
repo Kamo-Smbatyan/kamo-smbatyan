@@ -200,7 +200,7 @@ function Acria() {
         </div>
 
         <div>
-          <h2 class="hover-dot">
+          <h2 className="hover-dot">
             Usage and Roadmap
             <img
               src="/assets/green-dot.svg"

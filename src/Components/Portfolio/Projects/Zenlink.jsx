@@ -46,7 +46,7 @@ function Zenlink() {
 
       <div className="project-detail-description">
         <div>
-          <h2 class="hover-dot">
+          <h2 className="hover-dot">
             Project Overview
             <img
               src="/assets/green-dot.svg"
@@ -76,7 +76,7 @@ function Zenlink() {
         </div>
 
         <div>
-          <h2 class="hover-dot">
+          <h2 className="hover-dot">
             Key Features and Packages
             <img
               src="/assets/green-dot.svg"
@@ -141,7 +141,7 @@ function Zenlink() {
         </div>
 
         <div>
-          <h2 class="hover-dot">
+          <h2 className="hover-dot">
             Development and Testing
             <img
               src="/assets/green-dot.svg"
@@ -172,7 +172,7 @@ function Zenlink() {
         </div>
 
         <div>
-          <h2 class="hover-dot">
+          <h2 className="hover-dot">
             Documentation and Integration
             <img
               src="/assets/green-dot.svg"
@@ -200,7 +200,7 @@ function Zenlink() {
         </div>
 
         <div>
-          <h2 class="hover-dot">
+          <h2 className="hover-dot">
             License
             <img
               src="/assets/green-dot.svg"

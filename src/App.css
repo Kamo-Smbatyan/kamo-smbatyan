@@ -224,10 +224,7 @@ li {
 .home-quote {
   font-style: italic;
   font-weight: 400;
-  background-color: var(--gray);
-  padding: 6px 12px;
   border-radius: 8px;
-  text-align: center;
 }
 .logo {
   width: 56px;

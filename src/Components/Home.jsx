@@ -15,10 +15,10 @@ function Home() {
     <div className="home-pan">
       <div>
         <div style={{ paddingBottom: "28px" }}>
-          <h2 class="glitch-title">
+          <h2 className="glitch-title">
             <img src="/assets/blockchain brand.webp" alt="blockchain" />
           </h2>
-          <div class="glitch-lines"></div>
+          <div className="glitch-lines"></div>
           <p>
             Blockchain and decentralized tech are changing how we handle data
             and trust.
