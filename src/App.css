@@ -125,6 +125,7 @@ li {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   position: relative;
+  z-index: 10;
 }
 .portfolio-tag span {
   position: absolute;
@@ -350,10 +351,10 @@ code {
   border: none;
   flex-direction: column;
   width: 15%;
-  background-color: white;
   position: fixed;
   height: 100vh;
   gap: 16px;
+  background-color: transparent;
 }
 
 /* about page */
@@ -503,8 +504,25 @@ code {
     gap: 4px;
     flex-direction: column;
   }
+  .projects-overview {
+    width: 86vw !important;
+}
+.portfolio-sidebar {
+  margin-left: 0px;
+}
+.project-detail-description > div {
+  width: 87% !important;
+}
 }
 @media (max-width: 425px) {
+  .project-detail-description > div {
+    width: 94% !important;
+}
+  .home-rust-subttl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .about-main h1, .about-main p {
     width: 80vw;
 }

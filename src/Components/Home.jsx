@@ -43,11 +43,9 @@ function Home() {
               }}
             />
             <div className="home-gavin">
-              <span>
-              Gavin Wood's Quote,
-              </span>
+              <span>Gavin Wood's Quote,</span>
               <span
-              className="person-intro"
+                className="person-intro"
                 style={{
                   fontSize: "18px",
                   fontWeight: "400",
@@ -62,39 +60,43 @@ function Home() {
           <h3 className="home-quote">
             "In software, we’re not constrained by physical reality; the only
             limits are the limits of our own imagination."
-        <br />
+            <br />
             "The pace of innovation in the blockchain space is unlike anything
             we’ve seen before"
           </h3>
         </div>
         <div className="home-grp">
-          <h2 className="home-subtitle">
-            <img
-              src="/assets/green-dot.svg"
-              style={{ width: "12px" }}
-              alt="green-dot"
-            />{" "}
-            Rust & Substrate
-            <img
-              src="/assets/rust.webp"
-              alt="rust logo"
-              style={{
-                width: "56px",
-                height: "auto",
-                borderRadius: "100%",
-                marginRight: "10px",
-              }}
-            />
-            <img
-              src="/assets/substrate.webp"
-              alt="substrate logo"
-              style={{
-                width: "56px",
-                height: "auto",
-                borderRadius: "100%",
-                marginRight: "10px",
-              }}
-            />
+          <h2 className="home-subtitle home-rust-subttl">
+            <div>
+              <img
+                src="/assets/green-dot.svg"
+                style={{ width: "12px" }}
+                alt="green-dot"
+              />{" "}
+              Rust & Substrate
+            </div>
+            <div>
+              <img
+                src="/assets/rust.webp"
+                alt="rust logo"
+                style={{
+                  width: "56px",
+                  height: "auto",
+                  borderRadius: "100%",
+                  marginRight: "10px",
+                }}
+              />
+              <img
+                src="/assets/substrate.webp"
+                alt="substrate logo"
+                style={{
+                  width: "56px",
+                  height: "auto",
+                  borderRadius: "100%",
+                  marginRight: "10px",
+                }}
+              />
+            </div>
           </h2>
           <h3>The Dream Team of Blockchain Development</h3>
           <p>

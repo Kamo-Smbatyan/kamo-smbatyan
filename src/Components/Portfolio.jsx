@@ -46,17 +46,17 @@ function Portfolio() {
     document.getElementsByTagName("META")[3].content =
       "This page showcase my working projects";
 
-    window.addEventListener("resize", () => {
-      if (window.innerWidth <= 600) {
-        setstate("none");
-      } else {
-        setstate("flex");
-      }
-    });
+    // window.addEventListener("resize", () => {
+    //   if (window.innerWidth <= 600) {
+    //     setstate("none");
+    //   } else {
+    //     setstate("flex");
+    //   }
+    // });
 
-    if (window.innerWidth <= 600) {
-      setstate("none");
-    }
+    // if (window.innerWidth <= 600) {
+    //   setstate("none");
+    // }
   }, []);
 
   function myfun() {
