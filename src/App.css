@@ -62,8 +62,36 @@ li {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Color of the thumb on hover */
+  background-color: #7c7c7c; /* Color of the thumb on hover */
 }
+
+/* portfolio page mobile sidebar horizon scroll customize code */
+.scroll-container { 
+  white-space: nowrap; 
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f0f0f0; /* For Firefox: thumb and track color */
+}
+.scroll-container::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Scrollbar track color */
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 10px;
+  border: 2px solid #f0f0f0; /* Creates some padding from track edges */
+}
+
+/* Optional: Add a hover effect to the scrollbar thumb */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
 
 /* common style */
 
@@ -114,8 +142,11 @@ li {
   background-color: #fcd5be !important;
 }
 .portfolio-tag {
+  /* display: block; */
   width: fit-content;
   text-decoration: none;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
   padding: 6px 16px;
   margin: 4px 8px;
   border-radius: 10px;
@@ -346,6 +377,7 @@ code {
 }
 /* style of portfolio */
 .portfolio-sidebar {
+  display: flex;
   margin-left: 2vw;
   margin-top: 20px;
   border: none;
@@ -356,7 +388,18 @@ code {
   gap: 16px;
   background-color: transparent;
 }
-
+.mobile-portfolio-sidebar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  background-color: white;
+  width: 86vw;
+  padding-right: 24px;
+  margin-top: -12px;
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
 /* about page */
 .about-main {
   padding-top: 56px;
@@ -480,9 +523,7 @@ code {
   .projects-overview {
     width: 50vw !important;
 }
-.portfolio-sidebar {
-  width: 24% !important;
-}
+
 }
 
 @media (max-width: 768px) {
@@ -506,9 +547,6 @@ code {
   }
   .projects-overview {
     width: 86vw !important;
-}
-.portfolio-sidebar {
-  margin-left: 0px;
 }
 .project-detail-description > div {
   width: 87% !important;
@@ -541,23 +579,6 @@ code {
   .home-gavin > span {
     text-align: center;
   }
-  .mobile-nav-links {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      align-items: center;
-      top: 93px;
-      right: 0;
-      background-color: white;
-      border: 1px solid #ddd;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-      padding: 20px 0;
-      z-index: 998;
-      opacity: 0;
-      transform: translateY(-20px);
-      transition: all 0.3s ease;
-      width: 100%;
-}
 .mobile-nav-links a {
   font-size: 24px;
 }

@@ -38,6 +38,7 @@ import "./Components.css";
 
 function Portfolio() {
   const [state, setstate] = useState("flex");
+  const [sidebarName, setSidebarName] = useState("portfolio-sidebar");
   // State to manage the active link
   const [activeLink, setActiveLink] = useState("");
 
@@ -46,17 +47,17 @@ function Portfolio() {
     document.getElementsByTagName("META")[3].content =
       "This page showcase my working projects";
 
-    // window.addEventListener("resize", () => {
-    //   if (window.innerWidth <= 600) {
-    //     setstate("none");
-    //   } else {
-    //     setstate("flex");
-    //   }
-    // });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 768) {
+        setSidebarName("mobile-portfolio-sidebar scroll-container");
+      } else {
+        setSidebarName("portfolio-sidebar");
+      }
+    });
 
-    // if (window.innerWidth <= 600) {
-    //   setstate("none");
-    // }
+    if (window.innerWidth <= 600) {
+      setstate("none");
+    }
   }, []);
 
   function myfun() {
@@ -76,7 +77,7 @@ function Portfolio() {
 
   return (
     <div>
-      <div style={{ display: state }} className="portfolio-sidebar">
+      <div className={sidebarName}>
         {/* blockchain */}
         <NavLink
           onClick={() => handleNavLinkClick("blockchain")}
