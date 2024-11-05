@@ -143,11 +143,10 @@ li {
 }
 .portfolio-tag {
   /* display: block; */
-  width: fit-content;
   text-decoration: none;
   text-overflow: ellipsis; 
   white-space: nowrap;
-  padding: 6px 16px;
+  padding: 6px 20px;
   margin: 4px 8px;
   border-radius: 10px;
   cursor: pointer;
@@ -380,13 +379,14 @@ code {
   display: flex;
   margin-left: 2vw;
   margin-top: 20px;
-  border: none;
+  /* border:#aaf4d5 3px; */
   flex-direction: column;
-  width: 15%;
+  width: 10%;
   position: fixed;
   height: 100vh;
   gap: 16px;
-  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* background-color:#00482a; */
 }
 .mobile-portfolio-sidebar {
   position: fixed;

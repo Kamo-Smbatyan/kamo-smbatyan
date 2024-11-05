@@ -33,15 +33,6 @@ function TravelExplorer() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/travelling-explorer"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           About Explore is a single-page landing site designed to provide an

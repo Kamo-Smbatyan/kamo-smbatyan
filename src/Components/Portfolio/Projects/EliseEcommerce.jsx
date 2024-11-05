@@ -30,15 +30,6 @@ function EliseEcommerce() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/elise-ecommerce"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           Elise is a cutting-edge e-commerce platform built with React, Next.js,

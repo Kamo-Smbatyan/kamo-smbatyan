@@ -30,15 +30,6 @@ function Gemforge() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/gemforge-command-line-tool"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           Gemforge is a command-line tool designed to simplify the process of

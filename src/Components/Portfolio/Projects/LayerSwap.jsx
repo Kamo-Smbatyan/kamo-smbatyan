@@ -33,15 +33,6 @@ function LayerswapV8() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/layerswap-atomic-bridge"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           Layerswap V8 Atomic Bridge is a permissionless, trustless cross-chain

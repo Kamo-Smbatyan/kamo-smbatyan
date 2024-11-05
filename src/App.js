@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
-import Home from "./Components/Home";
+// import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 import About from "./Components/About";
 import { Rings } from "react-loader-spinner";
@@ -107,14 +107,14 @@ function App() {
           ></img>
         </NavLink>
         <NavLink
-          to="/"
+          to="/about"
           className="bloglink1"
           style={({ isActive }) => ({
             color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
             fontWeight: isActive ? "600" : "400",
           })}
         >
-          Home
+          About
         </NavLink>
         <NavLink
           to="/blogs"
@@ -136,21 +136,12 @@ function App() {
         >
           Portfolio
         </NavLink>
-        <NavLink
-          to="/about"
-          className="bloglink1"
-          style={({ isActive }) => ({
-            color: isActive ? "rgb(36, 204, 133)" : "#2c3e50",
-            fontWeight: isActive ? "600" : "400",
-          })}
-        >
-          About
-        </NavLink>
+        
       </div>
 
       <div className="mainroutes">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About />} />
           <Route path="/blogs/*" element={<Blog />} />
           <Route
             path="/portfolio/*"

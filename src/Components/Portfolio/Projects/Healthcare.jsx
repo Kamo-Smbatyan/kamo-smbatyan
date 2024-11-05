@@ -24,21 +24,12 @@ function Healthcare() {
         />
         <div className="project-link-grp">
           <div className="project-link">
-            <img src="/assets/icons/website.webp" alt="websit" />
+            <img src="/assets/icons/website.webp" alt="website" />
             <a
               className="doc-link"
               href="https://healthcaress.netlify.app/home"
             >
               Website
-            </a>
-          </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/hospital-website-react"
-            >
-              Github
             </a>
           </div>
         </div>

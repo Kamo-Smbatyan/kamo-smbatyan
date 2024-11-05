@@ -24,17 +24,6 @@ function ERC20Contract() {
           // className="project-detail-fv"
           style={{width: "40%"}}
         />
-        <div className="project-link-grp">
-          <div className="project-link">
-            <img src="/assets/icons/website.webp" alt="website" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/ERC-20-Contract"
-            >
-              Github
-            </a>
-          </div>
-        </div>
         <p className="project-ttl-comment">
           This project is a comprehensive implementation of the ERC-20 token
           interface, designed to provide a deep understanding of the ERC-20

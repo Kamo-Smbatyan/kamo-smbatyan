@@ -29,15 +29,6 @@ function ParalinkNetwork() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/paralink-substrate"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           ChainX is a community-driven project built on the next-generation

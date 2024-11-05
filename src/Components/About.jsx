@@ -12,17 +12,16 @@ function About() {
           🌟{" "}
           <span className="gradient-text">
             {" "}
-            Shaping the Future, <br /> One Line of Code at a Time
+            Shaping the Future, One Line of Code at a Time
           </span>
         </h1>
         <p>
           I’m{" "}
           <strong style={{ fontSize: "24px", color: "var(--black)" }}>
             {" "}
-         <img src="/logo.svg" className="about-logo" alt="hylcore" />   Hylcore
+           Kamo Smbatyan
           </strong>{" "}
-          with a passion for precision, constantly pushing the limits of
-          front-end and blockchain tech.</p> 
+          with a passion for precision, constantly pushing the limits of full-stack and blockchain tech.</p> 
         <p>
           <strong style={{ fontSize: "24px", color: "var(--black)" }}>
            <img src="./assets/rust.webp" className="about-logo" alt="rust" /> Rust

@@ -30,15 +30,6 @@ function KicksEcommerce() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/kicks-Ecommerce"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
         An open-source e-commerce app built with Next.js and Tailwind CSS.

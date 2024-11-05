@@ -27,10 +27,6 @@ function ChainX() {
             <img src="/assets/icons/website.webp" alt="website" />
             <a className="doc-link" href="https://chainx.org/">Website</a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a className="doc-link" href="https://github.com/hylcore-V/ChainX">Github</a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           ChainX is a community-driven project on the{" "}

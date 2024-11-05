@@ -29,12 +29,6 @@ function Zenlink() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a className="private-link" href="#">
-              Github: <span className="disabled-link"> Private</span>
-            </a>
-          </div>
         </div>
         <div className="project-tag-grp tag-grp">
           <span className="frontend-tag blog-tag">Typescript</span>

@@ -30,15 +30,6 @@ function DripsProtocol() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/drips-network-contract"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           Drips is an EVM blockchain protocol for streaming and splitting ERC-20

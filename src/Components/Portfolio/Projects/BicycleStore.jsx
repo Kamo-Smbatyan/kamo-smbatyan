@@ -33,15 +33,6 @@ function BicycleStore() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/bicycle-store"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           The Bicycle E-commerce platform is a modern online store that offers a

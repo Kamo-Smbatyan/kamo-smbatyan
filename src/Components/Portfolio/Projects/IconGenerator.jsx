@@ -33,15 +33,6 @@ function IconGenerator() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/AI-icon-generator"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           This is a SaaS app. You can generate any icons with an AI

@@ -30,15 +30,6 @@ function SignsForTrucks() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/signs-for-trucks"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           Signs for Trucks is an online store to buy custom vinyl designs for

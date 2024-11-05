@@ -32,15 +32,6 @@ function Wagerr() {
               Website
             </a>
           </div>
-          <div className="project-link">
-            <img src="/assets/icons/github.webp" alt="github" />
-            <a
-              className="doc-link"
-              href="https://github.com/hylcore-V/wagerr-dapp"
-            >
-              Github
-            </a>
-          </div>
         </div>
         <p className="project-ttl-comment">
           Wagerr smart contract written in Ink, a Rust-based smart contract
